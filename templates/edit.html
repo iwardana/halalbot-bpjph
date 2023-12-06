@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HALALBOT</title>
+</head>
+<body>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- Tautan ke file CSS Bootstrap -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Tautan ke file JavaScript Bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!-- Tautan ke file CSS DataTables (Bootstrap) -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.10/css/dataTables.bootstrap4.min.css">
+
+        <!-- Tautan ke file JavaScript DataTables (Bootstrap) -->
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.10/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.10/js/dataTables.bootstrap4.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+        <title>HalalBot</title>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand mr-5 font-weight-bold" href="#">HalalBot</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link"href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for('layanan') }}">Layanan</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for('informasi') }}">Informasi</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for('regulasi') }}">Regulasi</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto" id="userMenu">
+                        <!-- Tampilkan nama pengguna di sini -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span id="userName">Halo, {{ session['username'] }}</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="{{ url_for('edit') }}">Edit</a>
+                                <a class="dropdown-item" href="{{ url_for('logout') }}">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+            </div> 
+        </nav>
+        <div class="jumbotron text-light text-center mb-5">
+            <h1 class="display-4 font-weight-bold">SELAMAT DATANG DI HALALBOT</h1>
+        </div>
+
+        <form id="edit-form" action="{{ url_for('add_data') }}" method="POST">
+            <label for="tag">Tag:</label>
+            <input type="text" id="tag" name="tag" required><br>
+            
+            <label for="patterns">Patterns:</label>
+            <input type="text" id="patterns" name="patterns" required><br>
+            
+            <label for="responses">Responses:</label>
+            <input type="text" id="responses" name="responses" required><br>
+        
+            <button type="submit">Tambahkan Data</button>
+        </form>        
+
+        <div id="intents-list">
+            <table id="intents-table" class="table">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Patterns</th>
+                        <th>Responses</th>
+                    </tr>
+                </thead>
+                <tbody id="intents-table-body">
+                    {% for intent in intents_data %}
+                        <tr>
+                            <td>{{ intent.tag }}</td>
+                            <td>{{ intent.patterns|join(', ') }}</td>
+                            <td>{{ intent.responses|join(', ') }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container">
+            <!-- Admin Chat Logs Section -->
+            <div id="admin-chat-logs">
+                <h2>Admin Chat Logs</h2>
+                <table id="log-table">
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Timestamp</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody id="log-table-body">
+                        <!-- Chat log data will be displayed here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+         <section class="contact" id="contact">
+            <div class="container">
+               <div class="row">
+                  <div class="row col-md-4 offset-md-2 align-items-center align-content-center mb-4">
+                     <h4 class="col-md-12 font-weight-bold">HalalBot</h4>
+                     <h6 class="col-md-12">Teman Anda dalam Pilihan Halal.</h6>
+                  </div>
+                  <div class="row col-md-6 justify-content-center">
+                     <h5 class="col-12 mb-2 font-weight-bold">Contact Us</h5>
+                     <h6 class="col-md-12">Telp: +62 8123456789</h6>
+                     <h6 class="col-md-12">Email: cs.halalbot@bpjph.com</h6>
+                  </div>
+               </div>
+         </section>
+         <section class="footer p-2">
+            <div class="container">
+               <div class="row">
+                  <h6 class="col-md-12 text-center mb-0">&copy; Copyright 2023</h6>
+                  <p class="col-md-12 text-center text-decoration-none mb-0">Develop By <a
+                        href="http://instagram.com/ilhamwardanaaa" target="_blank">Ilham Wardana - Sistem Informasi UPNVJ</a></p>
+               </div>
+            </div>
+         </section>
+         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.min.js"></script>
+         <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+    </body>
+    <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">HalalBot</h4>
+                        <p class="chatbox__description--header">Hi. Aku HalalBot, ada yang bisa aku bantu?</p>
+                    </div>
+                </div>
+                <div class="chatbox__questions">
+                    <div class="question-option" onclick="chatbox.addQuestion('apa itu sertifikat halal')">Apa itu sertifikat halal?</div>
+                    <div class="question-option" onclick="chatbox.addQuestion('alur pembuatan sertifikat halal')">Alur pembuatan sertifikat halal</div>
+                    <div class="question-option" onclick="chatbox.addQuestion('tarif layanan sertifikat halal')">Tarif layanan sertifikat halal</div>
+                    <div class="question-option" onclick="chatbox.addQuestion('self declare')">Self declare</div>
+                    <div class="question-option" onclick="chatbox.addQuestion('sehati adalah')">Sehati adalah</div>
+                </div> 
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Tulis pesan...">
+                    <button class="chatbox__send--footer send__button">Send</button>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="static/images/chabot-icon.png" /></button>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

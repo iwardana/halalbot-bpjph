@@ -1,0 +1,1264 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Halo",
+                "Hai",
+                "Helo",
+                "Pagi",
+                "Morning",
+                "Siang",
+                "Afternoon",
+                "Sore",
+                "Evening",
+                "Mau nanya",
+                "Hi",
+                "Hy",
+                "Hei",
+                "Sis",
+                "Bro",
+                "Kawan", 
+                "salam",
+                "selamat pagi",
+                "selamat sore",
+                "selamat malam",
+                "woi",
+                "helo min",
+                "kak",
+                "assalamualaikum",
+                "test",
+                "mau nanya dong"
+            ],
+            "responses":[
+                "Hai! Halalbot di sini. Jangan lupa pakai Bahasa Indonesia yaa. Mau tau informasi tentang apa nih?",
+                "Halo! Saya Halalbot, salam kenal ya! Tanya apa saja tentang sertifikasi halal",
+                "Helo! Ini Halalbot. Jangan lupa pakai Bahasa Indonesia yaa kalau ingin bertanya terkait sertifikat halal",
+                "Halo! Halalbot disini. Ada yang bisa dibantu?",
+                "Halo! Aku Halalbot. Ketikkan pertanyaanmu dibawah ini ",
+                "Halo! Disini Halalbot. Ada pertanyaan apa yang bisa dibantu?"
+            ]
+        },
+        {
+            "tag": "halalbot",
+            "patterns": [
+                "Apa itu Halalbot?",
+                "Siapa Halalbot?",
+                "Halalbot",
+                "Kamu siapa?",
+                "siapa kamu?",
+                "halalbot adalah",
+                "halalbot itu apa?",
+                "halalbot apasih?",
+                "kamu aplikasi apa?"
+            ],
+            "responses": [
+                "Halalbot adalah aplikasi chatbot informasi tentang sertifikasi halal di Indonesia. Mulai dari cara pengajuan hingga perpanjang masa berlaku sertifikat halal lho",
+                "Halalbot itu adalah teman informasi kamu tentang sertifikasi halal di Indonesia"
+            ]
+        },
+        {
+            "tag": "pencipta_halalbot",
+             "patterns": [
+                "Siapa pembuatmu?",
+                "siapa pencipta kamu?",
+                "Siapa penciptamu?",
+                "siapa yang bikin kamu?",
+                "kamu siapa yang ciptain?",
+                "siapa yang ciptain kamu?"
+             ],
+             "responses": [
+                "Halalbot diciptakan oleh mahasiswa dari Universitas Pembangunan Nasional Veteran Jakarta jurusan Sistem Informasi yang memiliki ide kreatif dan semangat yang luar biasa walaupun banyak rintangan dan drama tapi berhasil menciptakan saya saat ini",
+                "Pembuat Halalbot dari kalangan mahasiswa Sistem Informasi di Universitas Pembangunan Nasional Veteran Jakarta lho!",
+                "Penciptaku berasal dari seorang mahasiswa yang kreatif, sehingga saya bisa aktif saat ini!"
+             ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Dah",
+                "Dadah",
+                "Bye",
+                "Byee",
+                "Good bye",
+                "Selamat tinggal",
+                "Sampai jumpa",
+                "Bai",
+                "See you",
+                "dadah",
+                "terima kasih",
+                "makasih",
+                "goodbye",
+                "thankyou",
+                "wassalam",
+                "thanks",
+                "syukron",
+                "thank you",
+                "dah",
+                "oke",
+                "ok"
+            ],
+            "responses": [
+                "Bye!",
+                "Dadahh!",
+                "Good bye!",
+                "Dahh, semoga harimu menyenangkan yaa!",
+                "Sampai jumpa lagi!",
+                "See u! Senang bisa membantu"
+            ]
+        },
+        {
+            "tag": "unknown",
+            "patterns": [
+                "apakah kamu tahu python?",
+                "qwertyuiop123",
+                "123456789",
+                "umur kamu berapa?",
+                "kamu cantik banget",
+                "ganteng",
+                "sayang",
+                "cinta",
+                "gajelas",
+                "qwertyuiop",
+                "jskjfska"
+            ],
+            "responses": [
+                "Maaf saya tidak memiliki informasi tersebut",
+                "Halalbot tidak tau tentang hal itu",
+                "Maaf, Sepertinya saya belum mengetahui hal tersebut",
+                "Aku tidak tau informasi itu, maaf yaa",
+                "Pastikan kamu menggunakan Bahasa Indonesia dengan benar",
+                "Saya tidak memiliki jawaban yang tepat untuk pertanyaan tersebut."
+            ]
+        },
+        {
+            "tag": "penjelasan_sertifikat_halal",
+            "patterns": [
+                "Sertifikat halal adalah",
+                "Apa itu sertifikat halal?",
+                "Tolong jelaskan tentang sertifikat halal.",
+                "Saya ingin mengetahui definisi sertifikat halal.",
+                "Bagaimana cara mendapatkan sertifikat halal?",
+                "Apa yang dimaksud dengan persyaratan sertifikat halal?",
+                "apa itu SH?",
+                "SH adalah",
+                "pengertian sertifikat halal",
+                "sertifikat halal"
+            ],
+            "responses": [
+                "Sertifikat Halal adalah pengakuan kehalalan suatu Produk yang dikeluarkan oleh BPJPH berdasarkan fatwa halal tertulis yang dikeluarkan oleh MUI. Sedangkan label halal adalah tanda kehalalan suatu Produk.",
+                "Sertifikat halal adalah tanda pengakuan resmi yang diberikan oleh otoritas sertifikasi halal kepada produk atau produsen yang telah memenuhi persyaratan halal. Sertifikat ini menunjukkan bahwa produk atau produsen tersebut telah diproduksi atau diolah dengan mematuhi standar kehalalan yang ditetapkan.",
+                "Sertifikat halal adalah dokumen resmi yang menegaskan bahwa produk atau proses produksi telah sesuai dengan prinsip dan standar kehalalan yang ditetapkan. Sertifikat ini membuktikan bahwa produk tersebut aman dan dapat dikonsumsi oleh umat Muslim.",
+                "Sertifikat halal adalah bukti tertulis yang menunjukkan bahwa suatu produk atau proses produksi telah memenuhi syarat-syarat kehalalan sesuai dengan prinsip agama Islam. Sertifikat ini dikeluarkan oleh lembaga atau badan yang berwenang dalam sertifikasi halal."
+            ]
+        },
+        {
+            "tag": "pengertian_bpjph",
+            "patterns": [
+                "Apa itu BPJPH?",
+                "Pengertian Badan Penyelenggara Jaminan Produk Halal (BPJPH)",
+                "Definisi BPJPH",
+                "Bagaimana Anda mendefinisikan BPJPH?",
+                "Siapa yang bertanggung jawab atas BPJPH?",
+                "bpjph adalah",
+                "bpjph itu apa?",
+                "pengertian bpjph",
+                "jelaskan bpjph"
+            ],
+            "responses": [
+                "BPJPH, atau Badan Penyelenggara Jaminan Produk Halal, adalah lembaga yang bertanggung jawab atas pengawasan dan sertifikasi produk halal di Indonesia. Mereka memiliki peran penting dalam memastikan bahwa produk atau layanan yang diklaim sebagai halal memenuhi persyaratan kehalalan yang berlaku.",
+                "Badan Penyelenggara Jaminan Produk Halal (BPJPH) adalah lembaga pemerintah Indonesia yang didirikan untuk mengawasi, mengatur, dan mengeluarkan sertifikasi produk halal. Tugas utama BPJPH adalah memastikan bahwa produk dan layanan yang dijual di Indonesia sesuai dengan standar kehalalan yang ditetapkan.",
+                "Pengertian BPJPH adalah lembaga yang berwenang dalam mengatur dan mengawasi kehalalan produk dan layanan di Indonesia. Mereka memiliki peran kunci dalam memastikan bahwa masyarakat dapat mengakses produk halal dengan aman."
+            ]
+        },
+        {
+            "tag": "sejarah_bpjph",
+            "patterns": [
+                "Apa sejarah pembentukan BPJPH?",
+                "Bagaimana BPJPH didirikan?",
+                "Ceritakan tentang berdirinya BPJPH.",
+                "Asal usul Badan Penyelenggara Jaminan Produk Halal (BPJPH)",
+                "Kapan BPJPH pertama kali dibentuk?",
+                "kapan bpjph di bentuk?",
+                "sejarah bpjph",
+                "tahun berapa bpjph dibentuk?"
+            ],
+            "responses": [
+                "BPJPH, atau Badan Penyelenggara Jaminan Produk Halal, didirikan pada tahun 2019 sebagai hasil dari implementasi Undang-Undang Nomor 33 Tahun 2014 tentang Jaminan Produk Halal. Lembaga ini bertugas mengatur dan mengawasi produk halal di Indonesia.",
+                "Badan Penyelenggara Jaminan Produk Halal (BPJPH) didirikan sebagai bagian dari upaya pemerintah Indonesia untuk memastikan kepatuhan produk dan layanan terhadap standar kehalalan. Pembentukan BPJPH dilakukan sesuai dengan ketentuan Undang-Undang Produk Halal.",
+                "Sejarah berdirinya BPJPH bermula dari kebutuhan untuk mengatur dan mengawasi produk halal secara efektif di Indonesia. Pada tahun 2019, BPJPH didirikan sebagai lembaga yang bertanggung jawab atas hal tersebut."
+            ]
+        },
+        {
+            "tag": "tugas_dan_fungsi_bpjph",
+            "patterns": [
+                "Apa tugas BPJPH?",
+                "Fungsi BPJPH",
+                "Apa yang dilakukan oleh BPJPH?",
+                "Tanggung jawab Badan Penyelenggara Jaminan Produk Halal",
+                "Peran BPJPH dalam pengaturan produk halal",
+                "tugas bpjph itu apa?",
+                "fungsinya bpjph",
+                "peran bpjph"
+            ],
+            "responses": [
+                "Tugas utama BPJPH adalah mengawasi dan mengatur produk halal di Indonesia. Mereka melakukan sertifikasi kehalalan, pemantauan produksi, penerbitan sertifikat halal, dan pemantauan terhadap seluruh rantai pasokan produk halal.",
+                "Fungsi BPJPH mencakup pengaturan, pengawasan, dan pemantauan produk halal di Indonesia. Mereka memastikan bahwa produk atau layanan yang diklaim sebagai halal memenuhi persyaratan kehalalan yang berlaku.",
+                "BPJPH melakukan sertifikasi kehalalan produk, mengawasi proses produksi, mengeluarkan sertifikat halal, serta memastikan bahwa produk halal di pasaran memenuhi standar kehalalan yang ditetapkan.",
+                "Tanggung jawab Badan Penyelenggara Jaminan Produk Halal (BPJPH) mencakup memverifikasi kepatuhan produk halal, memberikan sertifikat halal, dan memastikan bahwa seluruh rantai pasokan produk halal aman dan sesuai dengan persyaratan kehalalan.",
+                "Peran BPJPH dalam pengaturan produk halal sangat penting. Mereka memastikan bahwa konsumen dapat memiliki akses yang aman dan dapat dipercaya terhadap produk halal di Indonesia."
+            ]
+        }, 
+        {
+            "tag": "wewenang_bpjph",
+            "patterns": [
+                "Apa wewenang BPJPH?",
+                "Kewenangan Badan Penyelenggara Jaminan Produk Halal",
+                "Apa yang dapat dilakukan oleh BPJPH?",
+                "Wewenang dalam pengaturan produk halal",
+                "Tanggung jawab dan wewenang BPJPH"
+            ],
+            "responses": [
+                "BPJPH memiliki wewenang untuk mengawasi dan mengatur produk halal di Indonesia. Mereka dapat melakukan sertifikasi kehalalan, pemantauan produksi, pengujian laboratorium, dan memberikan sertifikat halal kepada produk yang memenuhi standar kehalalan.",
+                "Kewenangan Badan Penyelenggara Jaminan Produk Halal (BPJPH) mencakup pengawasan seluruh rantai pasokan produk halal, penerbitan sertifikat halal, pengendalian penggunaan logo halal, dan penindakan terhadap pelanggaran kehalalan.",
+                "BPJPH dapat melakukan sertifikasi halal, mengawasi proses produksi, memeriksa bahan baku, mengeluarkan sertifikat halal, dan memastikan bahwa produk atau layanan yang diklaim sebagai halal sesuai dengan persyaratan kehalalan.",
+                "Wewenang BPJPH melibatkan pengaturan dan pengawasan produk halal, penerbitan sertifikat halal, dan pemantauan produk yang beredar di pasaran. Mereka juga dapat mengambil tindakan hukum terhadap pelanggaran kehalalan.",
+                "Tanggung jawab dan wewenang BPJPH meliputi pengawasan, pengujian, sertifikasi, dan pemantauan produk halal di seluruh Indonesia. Mereka berwenang memastikan bahwa produk halal memenuhi standar kehalalan yang berlaku."
+            ]
+        },    
+        {
+            "tag": "visi_bpjph",
+            "patterns": [
+                "Apa visi BPJPH?",
+                "Misi Badan Penyelenggara Jaminan Produk Halal",
+                "Visi dan misi BPJPH",
+                "Tujuan BPJPH",
+                "Apa yang ingin dicapai oleh BPJPH?"
+            ],
+            "responses": [
+                "Visi BPJPH adalah 'Mewujudkan Jaminan Produk Halal yang Berkualitas, Terpercaya, dan Berkelanjutan untuk Kesejahteraan Umat.'",
+                "Misi BPJPH meliputi pengawasan produk halal, penerbitan sertifikat halal, edukasi masyarakat tentang produk halal, pengembangan sumber daya manusia, serta peningkatan kerjasama nasional dan internasional dalam kehalalan produk.",
+                "Visi BPJPH adalah menciptakan produk halal yang berkualitas, terpercaya, dan berkelanjutan demi kesejahteraan umat. Misi mereka adalah mengatur dan mengawasi produk halal, memastikan kepatuhan produsen, dan memberikan informasi yang akurat kepada masyarakat.",
+                "Tujuan BPJPH adalah memastikan bahwa produk halal di Indonesia dapat diakses dengan mudah oleh masyarakat, diproduksi dengan standar kehalalan yang tinggi, dan memberikan manfaat bagi kesejahteraan umat.",
+                "BPJPH ingin mencapai keamanan, kepercayaan, dan kesejahteraan masyarakat melalui pengaturan produk halal yang efektif dan terpercaya."
+            ]
+        },
+        {
+            "tag": "misi_bpjph",
+            "patterns": [
+                "Apa misi BPJPH?",
+                "Tujuan Badan Penyelenggara Jaminan Produk Halal",
+                "Misi BPJPH dalam mengatur produk halal",
+                "Apa yang ingin dicapai oleh BPJPH melalui misinya?"
+            ],
+            "responses": [
+                "Misi BPJPH meliputi pengawasan produk halal, penerbitan sertifikat halal, edukasi masyarakat tentang produk halal, pengembangan sumber daya manusia, serta peningkatan kerjasama nasional dan internasional dalam kehalalan produk.",
+                "Tujuan BPJPH adalah memastikan bahwa produk halal di Indonesia diproduksi, didistribusikan, dan dikonsumsi sesuai dengan standar kehalalan yang berlaku. Mereka juga berupaya meningkatkan pemahaman masyarakat tentang produk halal.",
+                "Misi BPJPH adalah mengatur dan mengawasi produk halal untuk memastikan kepatuhan produsen, memelihara kepercayaan masyarakat terhadap produk halal, serta mempromosikan produk halal Indonesia di pasar global.",
+                "BPJPH berkomitmen untuk meningkatkan kualitas produk halal, mengedukasi masyarakat tentang pentingnya produk halal, dan menjalin kerjasama dengan lembaga terkait dalam upaya menjaga kehalalan produk."
+            ]
+        },
+                                                   
+        {   "tag": "nomor_BPJPH",
+            "patterns": [
+                "Bagaimana cara menghubungi BPJPH?",
+                "Berapa nomor telepon BPJPH?",
+                "nomor telepon bpjph",
+                "telepon bpjph",
+                "telfon"
+            ],
+            "responses": [
+                "Anda dapat menghubungi BPJPH melalui nomor telepon (021) 34833020, melalui whatsapp 6281110683146, serta melalui email humasbpjph@kemenag.go.id",
+                "Nomor telepon BPJPH adalah (021) 34833020 atau 6281110683146 (Whatsapp)."
+            ]
+        },
+        {   "tag": "alamat_kantor",
+            "patterns": [
+                "Dimana alamat kantor BPJPH?",
+                "Apakah BPJPH memiliki kantor cabang?",
+                "Apakah ada alamat BPJPH di luar negeri?",
+                "bpjph ada dimana?",
+                "kantor pusat bpjph",
+                "kantor bpjph",
+                "alamat bpjph",
+                "bpjph ada dimana?"
+            ],
+            "responses": [
+                "BPJPH terletak di Jl. Raya Pondok Gede No.13 Pinang Ranti, Jakarta Timur - Indonesia dan saat ini belum memiliki kantor cabang, baik di dalam maupun di luar negeri."
+            ]
+        },
+        {
+            "tag": "email_BPJPH",
+            "patterns": [
+                "Apa alamat email BPJPH?",
+                "Apa email BPJPH",
+                "BPJPH ada email?",
+                "email bpjph"
+            ],
+            "responses": [
+                "Alamat email BPJPH adalah humasbpjph@kemenag.go.id"
+            ] 
+        },
+        {
+            "tag": "sosial_media",
+            "patterns": [
+                "Apakah BPJPH memiliki akun sosial media?",
+                "Bagaimana saya bisa mengikuti BPJPH di media sosial?",
+                "Apakah BPJPH aktif di Facebook?",
+                "Apa akun Instagram resmi BPJPH?",
+                "Bagaimana cara mendapatkan informasi terbaru dari BPJPH di media sosial?",
+                "Bagaimana cara menghubungi BPJPH melalui media sosial?",
+                "ig bpjph",
+                "facebook bpjph",
+                "sosmed bpjph",
+                "instagram bpjph",
+                "twitter"
+            ],
+            "responses": [
+                "Akun sosial media BPJPH dapat dilihat sebagai berikut: 1. https://www.instagram.com/halal.indonesia/ , 2. https://www.facebook.com/bpjphkemenagri , 3. https://twitter.com/bpjphkemenag",
+                "BPJPH dapat ditemukan pada username sosial media berikut: 1. https://www.instagram.com/halal.indonesia/ , 2. https://www.facebook.com/bpjphkemenagri , 3. https://twitter.com/bpjphkemenag",
+                "Akun Instagram, Facebook, Twitter resmi BPJPH adalah 1. https://www.instagram.com/halal.indonesia/ , 2. https://www.facebook.com/bpjphkemenagri , 3. https://twitter.com/bpjphkemenag",
+                "Akun resmi Instagram, Facebook, Twitter resmi BPJPH adalah 1. https://www.instagram.com/halal.indonesia/ , 2. https://www.facebook.com/bpjphkemenagri , 3. https://twitter.com/bpjphkemenag",
+                "Anda dapat memperoleh informasi terbaru dari BPJPH dengan mengikuti akun 1. https://www.instagram.com/halal.indonesia/ , 2. https://www.facebook.com/bpjphkemenagri , 3. https://twitter.com/bpjphkemenag",
+                "Anda dapat menghubungi BPJPH melalui media sosial dengan mengirimkan pesan melalui akun 1. https://www.instagram.com/halal.indonesia/ , 2. https://www.facebook.com/bpjphkemenagri , 3. https://twitter.com/bpjphkemenag"
+            ]    
+        },
+        {
+            "tag": "cari_sertifikat_halal",
+            "patterns": [
+                "Bagaimana cara mencari nomor sertifikat halal suatu produk?",
+                "Apakah ada cara mudah untuk menemukan nomor sertifikat halal suatu produk?",
+                "Apa langkah-langkah untuk mencari nomor sertifikat halal sebuah makanan?",
+                "Bagaimana saya bisa mengetahui nomor sertifikat halal sebuah produk?",
+                "Apakah Produk ini halal?",
+                "produk ini halal?",
+                "informasi nomor sertifikat halal?",
+                "daftar produk yang sudah halal",
+                "produk yang sudah halal",
+                "info nomor sertifikat halal",
+                "cari sertifikat halal",
+                "nomor sertifikat halal",
+                "produk apa saja yang sudah terdaftar halal di bpjph?",
+                "produk yang sudah memiliki sertifikat halal",
+                "produk bersertifikat halal",
+                "cek nomor sertifikat halal",
+                "bagaimana cara mencari nomor sertifikat halal",
+                "nomor sertifikat halal"
+            ],
+            "responses": [
+                "Untuk mengetahui suatu produk sudah memiliki sertifikat halal atau belum, dapat diakses pada halaman https://info.halal.go.id/ ",
+                "Produk yang memiliki sertifikat halal dapat dicari pada halaman https://info.halal.go.id/",
+                "Informasi nomor sertifikat halal suatu produk ataupun jasa dapat dilihat pada halaman https://info.halal.go.id/",
+                "Untuk mengetahui nomor sertifikat halal sebuah produk, Anda bisa menggunakan mengunjungi situs web resmi https://info.halal.go.id/.",
+                "Anda dapat mencari nomor sertifikat halal suatu produk dengan mengunjungi situs web https://info.halal.go.id/.",
+                "Untuk mengecek apakah sebuah produk memiliki sertifikat halal, Anda bisa menggunakan situs web https://info.halal.go.id/."
+            ]
+        },
+        {
+            "tag": "verifikasi_pembayaran_sertifikat_halal",
+            "patterns": [
+                "Bagaimana cara melakukan verifikasi pembayaran sertifikat halal?",
+                "Prosedur verifikasi pembayaran sertifikat halal",
+                "Langkah-langkah verifikasi pembayaran sertifikat halal",
+                "Apa yang perlu dilakukan untuk memeriksa pembayaran sertifikat halal?",
+                "Verifikasi pembayaran sertifikat kehalalan",
+                "Bagaimana cara melakukan verifikasi pembayaran sertifikasi halal reguler?"
+            ],
+            "responses": [
+                "Untuk melakukan verifikasi pembayaran sertifikat halal, Anda perlu menghubungi Badan Penyelenggara Jaminan Produk Halal (BPJPH) dan menyediakan bukti pembayaran yang telah Anda lakukan.",
+                "Prosedur verifikasi pembayaran sertifikat halal melibatkan pengiriman bukti pembayaran kepada BPJPH. Mereka akan memeriksa dan memvalidasi pembayaran Anda sebelum mengeluarkan sertifikat halal.",
+                "Langkah-langkah verifikasi pembayaran sertifikat halal meliputi pengiriman bukti pembayaran, pemeriksaan oleh tim BPJPH, dan konfirmasi bahwa pembayaran telah diterima dan diverifikasi.",
+                "Untuk memeriksa pembayaran sertifikat halal, Anda dapat menghubungi BPJPH dan mengirimkan bukti pembayaran Anda. Mereka akan melakukan verifikasi dan memberikan konfirmasi pembayaran yang telah diterima.",
+                "Verifikasi pembayaran sertifikat kehalalan dilakukan oleh tim BPJPH untuk memastikan bahwa semua biaya terkait sertifikasi telah dibayarkan dengan benar.",
+                "Pelaku usaha melakukan pembayaran dan mengunggah bukti bayar (format .pdf) di SIHALAL dan BPJPH akan melakukan verifikasi pembayaran dan menerbitkan STTD(Surat Tanda Terima Dokumen) di SIHALAL"
+            ]
+        },        
+        {
+            "tag": "tarif_layanan_bpjph",
+            "patterns": [
+                "Tarif berapa untuk sertifikasi halal produk makanan?",
+                "Mau tanya, berapa biaya untuk mendapatkan sertifikat halal?",
+                "berapa biaya yang diperlukan untuk bikin sertifikat halal?",
+                "Gimana sih aturannya tarif untuk sertifikasi halal?",
+                "Berapa harga untuk proses sertifikasi halal suatu barang?",
+                "biaya untuk membuat sertifikat halal",
+                "uang yang dikeluarkan untuk buat sertifikat halal?",
+                "harga pembuatan sertifikat halal",
+                "tarif layanan sertifikat halal",
+                "harga buat sertifikat halal",
+                "berapa harga sertifikat halal?"
+            ],
+            "responses": [
+                "Tarif layanan sertifikasi halal produk makanan di BPJPH tergantung pada kategori produk dan skala usahanya. Kamu bisa lihat daftar tarif lengkapnya di https://cmsbl.halal.go.id/uploads/57_PMK_05_2021_Per_b450f8e2ce.pdf.",
+                "Biaya untuk mendapatkan sertifikat halal tergantung pada jenis produk dan skala usaha. Kamu bisa cek daftar tarifnya di https://cmsbl.halal.go.id/uploads/57_PMK_05_2021_Per_b450f8e2ce.pdf.",
+                "Ada daftar tarif layanan sertifikasi halal produk yang bisa kamu lihat di https://cmsbl.halal.go.id/uploads/57_PMK_05_2021_Per_b450f8e2ce.pdf. Biayanya tergantung pada jenis produk dan ukuran usahanya.",
+                "Tarif untuk sertifikasi halal produk makanan ditentukan berdasarkan kategori produk dan skala usahanya. Kamu bisa cek daftar tarifnya di https://cmsbl.halal.go.id/uploads/57_PMK_05_2021_Per_b450f8e2ce.pdf.",
+                "Harga untuk proses sertifikasi halal suatu barang berbeda-beda tergantung pada jenis produk dan ukuran usahanya. Kamu bisa cek daftar tarif lengkapnya di https://cmsbl.halal.go.id/uploads/57_PMK_05_2021_Per_b450f8e2ce.pdf",
+                "Untuk mendapatkan sertifikat halal, kamu perlu membayar biaya sertifikasi yang disesuaikan dengan jenis produk dan skala usahanya. Informasi lengkapnya ada di https://cmsbl.halal.go.id/uploads/57_PMK_05_2021_Per_b450f8e2ce.pdf"
+            ]
+        },
+        {
+            "tag": "penjelasan_self_declare",
+            "patterns": [
+                "Apa itu program self declare?",
+                "Bisa jelaskan tentang program self declare?",
+                "Saya ingin tahu lebih lanjut tentang program self declare.",
+                "pengertian self declare",
+                "Program self declare itu apa ya?",
+                "self declare adalah",
+                "self declare"
+            ],
+            "responses": [
+                "Program self declare adalah program yang memungkinkan pelaku usaha untuk menyatakan bahwa produk yang mereka hasilkan sudah memenuhi persyaratan halal tanpa harus melalui proses sertifikasi formal. Namun, perlu diingat bahwa program ini memiliki ketentuan dan kewajiban yang harus dipenuhi. Informasi lengkap terkait program self declare dapat diakses pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Program self declare adalah program di mana pelaku usaha dapat menyatakan bahwa produk mereka memenuhi persyaratan halal tanpa harus melalui proses sertifikasi. Namun, mereka tetap harus mematuhi aturan dan kewajiban yang ditetapkan oleh badan yang berwenang. Informasi lengkap terkait program self declare dapat diakses pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Program self declare adalah program yang memungkinkan pelaku usaha untuk menyatakan sendiri bahwa produk yang mereka produksi memenuhi persyaratan halal. Namun, pelaku usaha tetap memiliki tanggung jawab untuk memastikan keabsahan dan keakuratan pernyataan mereka. Informasi lengkap terkait program self declare dapat diakses pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Cara kerja program self declare adalah pelaku usaha membuat pernyataan bahwa produk yang mereka hasilkan sudah memenuhi persyaratan halal. Namun, mereka masih harus mematuhi ketentuan dan kewajiban yang ditetapkan oleh badan yang berwenang. Informasi lengkap terkait program self declare dapat diakses pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Program self declare adalah program di mana pelaku usaha bisa menyatakan bahwa produk mereka sudah memenuhi persyaratan halal tanpa harus mendapatkan sertifikasi formal. Namun, mereka harus memenuhi syarat dan kewajiban yang ditetapkan oleh badan yang berwenang. Informasi lengkap terkait program self declare dapat diakses pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Program self declare adalah program yang memungkinkan pelaku usaha untuk mengklaim bahwa produk mereka sudah memenuhi persyaratan halal tanpa melalui proses sertifikasi formal. Namun, mereka masih harus memenuhi persyaratan dan melaksanakan kewajiban yang berlaku. Informasi lengkap terkait program self declare dapat diakses pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9"
+            ]
+        },
+        {
+            "tag": "biaya_self_declare",
+            "patterns": [
+                "Berapa biaya yang harus saya bayar untuk program self declare?",
+                "Apakah ada biaya yang harus saya keluarkan untuk program self declare?",
+                "Apakah program self declare ini gratis?",
+                "berapa biaya self declare?",
+                "tarif self declare",
+                "Apakah program self declare ini dikenakan biaya?",
+                "self declare bayar berapa?",
+                "biaya mengikuti self declare",
+                "harga self declare",
+                "berapa harga self declare?",
+                "self declare gratis?"
+            ],
+            "responses": [
+                "Untuk layanan self declare tidak dikenakan biaya. Namun ada syarat-syarat yang harus dipenuhi. Informasi terkait program self declare dapat diakses pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Program self-declare ini tidak dikenakan biaya atau gratis. Anda dapat melakukan self-declare tanpa perlu membayar biaya tertentu. Informasi terkait program self declare dapat diakses pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Anda beruntung! Program self-declare ini tidak memerlukan biaya atau gratis. Anda dapat mengikuti program ini tanpa harus mengeluarkan uang. Informasi terkait program self declare dapat diakses pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Tidak ada biaya yang harus Anda bayar untuk program self-declare. Program ini disediakan secara gratis untuk mempermudah proses deklarasi produk halal Anda. Informasi terkait program self declare dapat diakses pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Program self-declare ini gratis dan tidak dikenakan biaya. Anda dapat dengan mudah mengikuti program ini tanpa perlu merogoh kocek Anda. Informasi terkait program self declare dapat diakses pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Anda tidak perlu membayar biaya apa pun untuk program self-declare ini. Program ini gratis dan dapat Anda gunakan untuk melakukan deklarasi produk halal Anda. Informasi terkait program self declare dapat diakses pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Program self-declare ini membebaskan Anda dari biaya atau gratis. Anda dapat melakukan deklarasi produk halal tanpa perlu khawatir tentang biaya yang harus dikeluarkan. Informasi terkait program self declare dapat diakses pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9"
+            ]
+        },
+        {
+            "tag": "cara_daftar_self_declare",
+            "patterns": [
+                "Bagaimana cara daftar ke program self declare?",
+                "Tolong berikan panduan cara mendaftar program self declare.",
+                "Bagaimana cara mendaftarkan produk ke program self declare?",
+                "Saya ingin mendaftarkan produk saya ke program self declare, apa langkahnya?",
+                "Bagaimana saya bisa mendaftar program self declare? Tolong berikan petunjuknya.",
+                "Tolong berikan informasi cara daftar program self declare.",
+                "daftar self declare",
+                "mau ikut self declare",
+                "cara ikut self declare",
+                "petunjuk daftar self declare"
+            ],
+            "responses": [
+                "Untuk mendaftar ke program self declare, ikuti langkah-langkah pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Berikut adalah panduan langkah-langkah untuk mendaftar program self declare pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Untuk mendaftarkan produk ke program self declare, ikuti langkah-langkah pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Untuk mendaftarkan produk Anda ke program self declare, lakukan hal pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Petunjuk lengkap pendaftaran program self declare dapat Anda temukan di halaman ini https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Silakan ikuti langkah-langkah pendaftaran program self declare di halaman berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9"
+            ]
+        },
+        {
+            "tag": "menu_layanan",
+            "patterns": [
+                "Apa saja layanan yang disediakan oleh BPJPH?",
+                "Tolong jelaskan layanan yang bisa saya dapatkan dari BPJPH.",
+                "Layanan apa saja yang bisa saya akses di BPJPH?",
+                "Apa yang bisa saya lakukan dengan layanan BPJPH?",
+                "Bagaimana cara menggunakan layanan BPJPH?",
+                "Saya ingin mengetahui lebih lanjut tentang layanan BPJPH.",
+                "bpjph buka layanan apa aja?",
+                "layanan di bpjph",
+                "informasi layanan bpjph",
+                "bpjph buka layanan apa aja?"
+            ],
+            "responses": [
+                "BPJPH menyediakan berbagai layanan untuk memudahkan pengguna dalam mengakses informasi tentang sertifikasi halal, mengajukan permohonan sertifikasi halal, dan mengakses data terkait halal. Beberapa layanan yang disediakan oleh BPJPH antara lain 1. Sertifikasi Halal, 2. Registrasi Sertifikasi Halal Luar Negeri, 3. Registrasi Auditor Halal, 4. Surat Keterangan Akreditasi dan Registrasi Lembaga Pendamping Halal, 5. Sertifikat Akreditas LPH. 6. Pendaftaran Auditor Halal",
+                "Anda dapat mengakses layanan-layanan berikut di BPJPH untuk keperluan terkait sertifikasi halal: 1. Sertifikasi Halal, 2. Registrasi Sertifikasi Halal Luar Negeri, 3. Registrasi Auditor Halal, 4. Surat Keterangan Akreditasi dan Registrasi Lembaga Pendamping Halal, 5. Sertifikat Akreditas LPH. 6. Pendaftaran Auditor Halal",
+                "Berikut adalah beberapa layanan yang disediakan oleh BPJPH untuk memfasilitasi pengguna dalam hal sertifikasi halal: 1. Sertifikasi Halal, 2. Registrasi Sertifikasi Halal Luar Negeri, 3. Registrasi Auditor Halal, 4. Surat Keterangan Akreditasi dan Registrasi Lembaga Pendamping Halal, 5. Sertifikat Akreditas LPH. 6. Pendaftaran Auditor Halal",
+                "Dengan layanan BPJPH, Anda bisa melakukan hal-hal berikut terkait sertifikasi halal: 1. Sertifikasi Halal, 2. Registrasi Sertifikasi Halal Luar Negeri, 3. Registrasi Auditor Halal, 4. Surat Keterangan Akreditasi dan Registrasi Lembaga Pendamping Halal, 5. Sertifikat Akreditas LPH. 6. Pendaftaran Auditor Halal",
+                "Untuk menggunakan layanan BPJPH, Anda dapat mengakses berbagai fitur yang disediakan melalui platform BPJPH. Beberapa layanan yang disediakan oleh BPJPH antara lain 1. Sertifikasi Halal, 2. Registrasi Sertifikasi Halal Luar Negeri, 3. Registrasi Auditor Halal, 4. Surat Keterangan Akreditasi dan Registrasi Lembaga Pendamping Halal, 5. Sertifikat Akreditas LPH. 6. Pendaftaran Auditor Halal",
+                "Jika Anda ingin mengetahui lebih lanjut tentang layanan BPJPH, kami siap membantu Anda dengan informasi yang diperlukan. Beberapa layanan yang disediakan oleh BPJPH antara lain 1. Sertifikasi Halal, 2. Registrasi Sertifikasi Halal Luar Negeri, 3. Registrasi Auditor Halal, 4. Surat Keterangan Akreditasi dan Registrasi Lembaga Pendamping Halal, 5. Sertifikat Akreditas LPH. 6. Pendaftaran Auditor Halal"
+            ]
+        },
+        {
+            "tag": "profil_bpjph",
+            "patterns": [
+                "Apa itu BPJPH?",
+                "Apa peran BPJPH dalam sertifikasi halal?",
+                "Bagaimana sejarah berdirinya BPJPH?",
+                "Siapa yang bertanggung jawab atas BPJPH?",
+                "Apakah BPJPH merupakan lembaga pemerintah?",
+                "bpjph itu apa?",
+                "bpjph adalah"
+            ],
+            "responses": [
+                "BPJPH adalah Badan Penyelenggara Jaminan Produk Halal yang bertanggung jawab dalam mengurus sertifikasi halal di Indonesia.",
+                "Peran BPJPH dalam sertifikasi halal adalah melakukan pengawasan, pengaturan, dan pengendalian terhadap proses sertifikasi halal di Indonesia.",
+                "BPJPH didirikan pada tahun 2017 sebagai implementasi dari Undang-Undang Jaminan Produk Halal.",
+                "BPJPH bertanggung jawab kepada Menteri Agama dalam melaksanakan tugas dan fungsinya.",
+                "Ya, BPJPH merupakan lembaga pemerintah yang dibentuk berdasarkan Undang-Undang Jaminan Produk Halal.",
+                "BPJPH menyediakan berbagai layanan terkait sertifikasi halal, seperti registrasi produk, pengawasan produksi, dan penerbitan sertifikat halal."            
+            ]
+        },
+        {
+            "tag": "dasar_hukum_bpjph",
+            "patterns": [
+                "Apa dasar hukum pembentukan BPJPH?",
+                "Dasar hukum Badan Penyelenggara Jaminan Produk Halal (BPJPH)",
+                "Hukum yang mengatur BPJPH",
+                "Bagaimana dasar hukum BPJPH terbentuk?",
+                "Undang-Undang tentang BPJPH",
+                "uu yang mengatur bpjph",
+                "hukum di bpjph",
+                "peraturan bpjph"
+            ],
+            "responses": [
+                "Dasar hukum pembentukan BPJPH adalah Undang-Undang Nomor 33 Tahun 2014 tentang Jaminan Produk Halal. Undang-undang ini mengatur pembentukan, tugas, dan wewenang BPJPH dalam mengatur produk halal di Indonesia.",
+                "Badan Penyelenggara Jaminan Produk Halal (BPJPH) didirikan berdasarkan ketentuan Undang-Undang Nomor 33 Tahun 2014 tentang Jaminan Produk Halal. Undang-undang ini merupakan dasar hukum yang mengatur segala aspek terkait kehalalan produk di Indonesia.",
+                "Dasar hukum BPJPH mencakup Undang-Undang Nomor 33 Tahun 2014 tentang Jaminan Produk Halal dan peraturan turunannya. BPJPH berfungsi sebagai pelaksana undang-undang tersebut dalam pengaturan produk halal.",
+                "Dasar hukum BPJPH terbentuk melalui proses legislasi di Indonesia yang menghasilkan Undang-Undang Nomor 33 Tahun 2014. Undang-undang ini menjelaskan pembentukan BPJPH dan tanggung jawabnya terkait produk halal.",
+                "Undang-Undang Nomor 33 Tahun 2014 tentang Jaminan Produk Halal merupakan dasar hukum utama yang mengatur Badan Penyelenggara Jaminan Produk Halal (BPJPH) dan produk halal di Indonesia."
+            ]
+        }
+        ,
+        {
+            "tag": "pimpinan_bpjph",
+            "patterns": [
+                "siapa pemimpin",
+                "siapa kepala",
+                "kepala badan",
+                "ketua ",
+                "Siapa pimpinan BPJPH saat ini?",
+                "Siapa yang menjabat sebagai Kepala BPJPH?"
+            ],
+            "responses": [
+                "Pimpinan BPJPH saat ini adalah Bapak Dr.H.Muhammad Aqil Irham, M.Si.",
+                "Kepala BPJPH yang saat ini menjabat adalah Bapak Dr.H.Muhammad Aqil Irham, M.Si.",
+                "Pemimpin Utama BPJPH saat ini adalah Bapak Dr.H.Muhammad Aqil Irham, M.Si.",
+                "Bapak Dr.H.Muhammad Aqil Irham, M.Si. memimpin BPJPH saat ini.",
+                "Pimpinan BPJPH saat ini adalah Bapak Dr.H.Muhammad Aqil Irham, M.Si.",
+                "Nama Kepala BPJPH yang baru adalah Bapak Dr.H.Muhammad Aqil Irham, M.Si."            ]
+        },
+        {
+            "tag": "formulir_pendaftaran",
+            "patterns": [
+                "formulir permohonan sertifikat halal makanan, minuman, obat, dan kosmetik",
+                "formulir permohonan sertifikat halal jasa",
+                "formulir permohonan sertifikat halal rumah makan dan katering",
+                "formulir permohonan sertifikat halal rumah potong hewan/unggas",
+                "formulir permohonan sertifikat halal jasa barang gunaan",
+                "formulir pendaftaran sertifikat halal",
+                "informasi formulir pendaftaran sertifikat halal",
+                "informasi formulir",
+                "formulir sertifikat halal",
+                "mau daftar sertifikat halal"
+            ],
+            "responses": [
+                "Informasi terkait formulir pendaftaran dapat dilihat pada link berikut https://drive.google.com/drive/folders/1pe4QyabpoerV8I1rCwUHPPtYC_1pRjeh?usp=sharing",
+                "Informasi yang diminta dapat dilihat pada link berikut https://drive.google.com/drive/folders/1pe4QyabpoerV8I1rCwUHPPtYC_1pRjeh?usp=sharing",
+                "informasi formulir pendaftaran dapat diakses pada link https://drive.google.com/drive/folders/1pe4QyabpoerV8I1rCwUHPPtYC_1pRjeh?usp=sharing",
+                "formulir pendaftaran dapat dilihat pada link https://drive.google.com/drive/folders/1pe4QyabpoerV8I1rCwUHPPtYC_1pRjeh?usp=sharing",
+                "formulir yang diminta dapat diakses pada link berikut https://drive.google.com/drive/folders/1pe4QyabpoerV8I1rCwUHPPtYC_1pRjeh?usp=sharing",
+                "formulir pendaftaran sertifikat halal yang diminta dapat diakses pada link berikut https://drive.google.com/drive/folders/1pe4QyabpoerV8I1rCwUHPPtYC_1pRjeh?usp=sharing"
+            ]
+        },
+        {
+            "tag": "produk_non_halal",
+            "patterns": [
+                "bagaimana produk non halal",
+                "apa yang harus dilakukan jika produk non halal",
+                "Bagaimana cara membedakan produk halal dan non Halal?",
+                "Bagaimana cara menghindari produk yang mengandung bahan non Halal?",
+                "produk saya tidak halal?",
+                "label non halal"
+            ],
+            "responses": [
+                "Pelaku usaha wajib mencantumkan keterangan tidak halal pada produk. Pernyataan tidak halal merupakan bagian yang tidak terpisahkan dari produk. Keterangan dapat berupa gambar, tanda dan/atau tulisan. Informasi lengkap dapat dilihat pada link https://www.instagram.com/p/Cov72zErrZZ/?igshid=MDJmNzVkMjY%3D",
+                "Pelaku usaha wajib mencantumkan keterangan tidak halal pada produk. Informasi lengkap dapat dilihat pada link https://www.instagram.com/p/Cov72zErrZZ/?igshid=MDJmNzVkMjY%3D",
+                "Cara membedakan produk halal dan non-Halal adalah dengan melihat label sertifikasi halal yang tertera pada kemasan produk Informasi lengkap dapat dilihat pada link https://www.instagram.com/p/Cov72zErrZZ/?igshid=MDJmNzVkMjY%3D",
+                "Untuk menghindari produk yang mengandung bahan non-Halal, perhatikan daftar bahan pada kemasan dan pastikan memiliki sertifikat halal. Informasi lengkap dapat dilihat pada link https://www.instagram.com/p/Cov72zErrZZ/?igshid=MDJmNzVkMjY%3D",
+                "Terdapat label khusus berupa logo tidak halal yang menandakan bahwa produk tersebut tidak bersertifikat halal. Informasi lengkap dapat dilihat pada link https://www.instagram.com/p/Cov72zErrZZ/?igshid=MDJmNzVkMjY%3D",
+                "Informasi lengkap terkait produk non halal dapat dilihat pada link https://www.instagram.com/p/Cov72zErrZZ/?igshid=MDJmNzVkMjY%3D"
+                
+            ]
+        },
+        {
+            "tag": "isi_aspek_legal_sertifikat_halal",
+            "patterns": [
+                "Apa yang termasuk dalam aspek legal sertifikat halal?",
+                "Informasi hukum sertifikat halal",
+                "Apa yang harus diketahui tentang aspek legal sertifikat halal?",
+                "Persyaratan hukum sertifikasi produk halal",
+                "Aspek hukum dalam sertifikat kehalalan",
+                "Bagaimana cara mengisi aspek legal sertifikasi halal reguler?"
+            ],
+            "responses": [
+                "Aspek legal sertifikat halal mencakup persyaratan hukum yang harus dipatuhi oleh produsen atau pemilik produk dalam proses sertifikasi. Ini meliputi ketentuan undang-undang, regulasi, dan peraturan terkait produk halal.",
+                "Informasi hukum dalam sertifikat halal mencakup persyaratan dan ketentuan hukum yang berlaku dalam pengaturan produk halal. Hal ini mencakup Undang-Undang Nomor 33 Tahun 2014 dan peraturan turunannya.",
+                "Aspek legal sertifikat halal adalah bagian penting dalam memastikan bahwa produk memenuhi standar kehalalan yang ditetapkan oleh pemerintah. Produsen perlu memahami dan mematuhi ketentuan hukum yang berlaku.",
+                "Persyaratan hukum dalam sertifikasi produk halal mencakup ketentuan tentang bahan baku, proses produksi, penggunaan logo halal, pengawasan produksi, dan lainnya. Semua ini harus sesuai dengan hukum yang berlaku.",
+                "Aspek hukum dalam sertifikat kehalalan adalah dasar yang menentukan keabsahan dan kepercayaan terhadap produk halal. Oleh karena itu, produsen perlu mematuhi persyaratan hukum yang ketat dalam proses sertifikasi.",
+                "Aspek legal:NIB sertifikasi halal reguler dapat diisi di SIHalal"
+            ]
+        },        
+        {
+            "tag": "alur_sertifikat_halal",
+            "patterns": [
+                "alur pendaftaran sertifikat halal",
+                "bagaimana cara mendaftarkan produk melalui reguler",
+                "syarat sertifikasi halal",
+                "sertifikat halal reguler",
+                "cara mendapatkan sertifikah halal",
+                "apa itu sertifikasi halal reguler",
+                "flowchart sertifikat halal",
+                "alur sertifikat halal",
+                "proses sertifikat halal",
+                "prosedur sertifikat halal",
+                "cara membuat sertifikat halal",
+                "cara daftar sertifikat halal",
+                "saya ingin mendaftarkan produk saya",
+                "saya mau buat sertifikat halal",
+                "cara buat sertifikat halal",
+                "alur pembuatan sertifikat halal"
+            ],
+            "responses": [
+                "Informasi lengkap terkait syarat dan alur untuk mendapatkan sertifikat halal reguler dapat dilihat pada link https://drive.google.com/drive/folders/171HHvEqlNcCAmFo_p5EB-aLCLBHWjbtx",
+                "Informasi mengenai syarat dan alur pembuatan sertifikasi halal reguler dapat dilihat pada link https://drive.google.com/drive/folders/171HHvEqlNcCAmFo_p5EB-aLCLBHWjbtx",
+                "Sertifikat halal reguler adalah sertifikat yang dikeluarkan untuk produk yang memenuhi persyaratan halal secara umum. Informasi lebih lanjut dapat dilihat pada link https://drive.google.com/drive/folders/171HHvEqlNcCAmFo_p5EB-aLCLBHWjbtx",
+                "Untuk mengajukan sertifikat halal reguler, Anda perlu menghubungi Badan Penyelenggara Jaminan Produk Halal (BPJPH) dan mengikuti prosedur yang ditentukan. Informasi lebih lanjut dapat dilihat pada link https://drive.google.com/drive/folders/171HHvEqlNcCAmFo_p5EB-aLCLBHWjbtx",
+                "Sertifikat halal reguler adalah sertifikat yang diberikan kepada produk yang memenuhi persyaratan halal secara umum. Sertifikat ini menunjukkan bahwa produk tersebut telah mengikuti proses sertifikasi halal dan dapat dipercaya sebagai produk yang halal untuk dikonsumsi oleh umat Muslim. Informasi lebih lanjut dapat dilihat pada link https://drive.google.com/drive/folders/171HHvEqlNcCAmFo_p5EB-aLCLBHWjbtx",
+                "Serfikitat halal reguler merupakan sertifikat yang dibuat untuk produk makanan atau minuman yang telah memenuhi persyaratan halal. Informasi lebih lanjut dapat dilihat pada link https://drive.google.com/drive/folders/171HHvEqlNcCAmFo_p5EB-aLCLBHWjbtx"
+            ]
+        },
+        {
+            "tag": "penyelia_halal",
+            "patterns": [
+                "penyelia halal adalah",
+                "Apa itu penyelia halal?",
+                "Apa peran seorang penyelia halal?",
+                "Bagaimana cara menjadi penyelia halal?",
+                "Siapa yang bertanggung jawab atas pelantikan penyelia halal?",
+                "Apakah penyelia halal harus memiliki sertifikat khusus?",
+                "penyelia halal"
+            ],
+            "responses": [
+                "Penyelia Halal adalah orang yang bertugas melakukan pengawasan dan pemeriksaan terhadap produksi, penyimpanan, dan distribusi produk halal, serta memberikan sertifikasi halal jika produk tersebut memenuhi syarat dan ketentuan halal yang telah ditetapkan. Penyelia Halal harus memiliki kompetensi dan kualifikasi yang sesuai untuk melakukan tugas tersebut.",
+                "Penyelia halal adalah individu yang ditunjuk untuk melakukan pengawasan terhadap produksi dan penyajian produk halal.",
+                "Peran seorang penyelia halal adalah memastikan bahwa produk-produk yang dihasilkan memenuhi standar kehalalan yang ditetapkan.",
+                "Untuk menjadi penyelia halal, biasanya seseorang harus mengikuti pelatihan dan mendapatkan sertifikasi sebagai penyelia halal.",
+                "Pelantikan penyelia halal biasanya dilakukan oleh otoritas yang berwenang dalam hal sertifikasi halal, seperti BPJPH.",
+                "Penyelia halal umumnya harus memiliki sertifikat atau sertifikasi khusus yang menunjukkan bahwa mereka telah mendapatkan pelatihan dan memenuhi persyaratan tertentu."
+            ]
+        },
+        {
+            "tag": "manual_SJPH_sertifikat_halal",
+            "patterns": [
+                "Bagaimana cara mendapatkan manual SJPH sertifikat halal?",
+                "Prosedur penggunaan manual SJPH sertifikat halal",
+                "Apa yang perlu diketahui tentang manual SJPH sertifikat halal?",
+                "Cara mengakses panduan SJPH sertifikat halal",
+                "Petunjuk penggunaan manual SJPH sertifikat kehalalan",
+                "Bagaimana cara mendapatkan manual SJPH pada sertifikasi halal reguler?",
+                "cara mengetahui manual sjph"
+            ],
+            "responses": [
+                "Anda dapat mendapatkan manual SJPH sertifikat halal dari Badan Penyelenggara Jaminan Produk Halal (BPJPH) atau melalui situs web resmi BPJPH. Manual ini berisi panduan tentang penggunaan sertifikat halal.",
+                "Prosedur penggunaan manual SJPH sertifikat halal mencakup informasi tentang cara membaca dan memahami sertifikat halal, penggunaan logo halal, serta kewajiban yang harus dipatuhi oleh pemilik sertifikat.",
+                "Penting untuk mengetahui bahwa manual SJPH sertifikat halal berisi panduan tentang penggunaan sertifikat kehalalan. Ini membantu pemilik produk untuk mematuhi ketentuan dan menjaga kepercayaan masyarakat terhadap produk halal.",
+                "Untuk mengakses panduan SJPH sertifikat halal, Anda dapat mengunjungi situs web resmi BPJPH atau menghubungi BPJPH langsung melalui kontak yang tersedia.",
+                "Petunjuk penggunaan manual SJPH sertifikat kehalalan membantu pemilik produk dalam memahami persyaratan dan ketentuan yang harus dipatuhi dalam penggunaan sertifikat halal.",
+                "Manual SJPH halal reguler dapat diunduh di bpiph.halal.go.id/detail/informasi-1"
+            ]
+        },
+        {
+            "tag": "pengertian_manual_SJPH_sertifikat_halal",
+            "patterns": [
+                "Apa itu manual SJPH sertifikat halal?",
+                "Definisi manual SJPH sertifikat halal",
+                "Pengertian manual SJPH sertifikat kehalalan",
+                "Apakah yang dimaksud dengan manual SJPH sertifikat halal?",
+                "Penjelasan tentang manual SJPH sertifikat halal",
+                "sjph adalah",
+                "sjph itu apa",
+                "sjph",
+                "manual sjph"
+            ],
+            "responses": [
+                "Manual SJPH sertifikat halal adalah dokumen panduan yang berisi informasi terkait penggunaan sertifikat halal. Ini memberikan petunjuk kepada pemilik sertifikat tentang cara menggunakan sertifikat kehalalan dengan benar.",
+                "Definisi manual SJPH sertifikat halal adalah dokumen resmi yang menguraikan aturan dan ketentuan dalam penggunaan sertifikat halal. Ini membantu pemilik produk untuk memahami kewajiban mereka terkait sertifikat kehalalan.",
+                "Pengertian manual SJPH sertifikat halal adalah panduan yang menjelaskan cara membaca, mengerti, dan mengikuti ketentuan yang terdapat dalam sertifikat halal. Ini membantu menjaga kepatuhan terhadap standar kehalalan.",
+                "Manual SJPH sertifikat halal adalah panduan yang dikeluarkan oleh Badan Penyelenggara Jaminan Produk Halal (BPJPH) yang berisi informasi tentang penggunaan sertifikat halal dan logo halal.",
+                "Penjelasan tentang manual SJPH sertifikat halal mencakup informasi tentang penggunaan sertifikat kehalalan, tata cara penggunaan logo halal, dan kewajiban yang harus dipatuhi oleh pemilik produk."
+            ]
+        },                
+        {
+            "tag": "pendampingan",
+            "patterns": [
+                "apa itu pendamping pph?",
+                "siapa pendamping pph?",
+                "pendamping pph adalah",
+                "pendamingan adalah",
+                "pendamping pph",
+                "apa yang dimaksud pendamping pph?",
+                "pendampingan itu apa?",
+                "pendamping proses produksi halal",
+                "PPH itu apa?"
+            ],
+            "responses": [
+                "Pendamping Proses Produksi Halal (PPH) adalah seorang profesional yang membantu produsen dalam memastikan bahwa produk yang dihasilkan memenuhi standar kehalalan. Tugas utama pendamping proses produksi halal adalah memberikan saran dan bimbingan untuk memastikan bahwa seluruh proses produksi sesuai dengan prinsip dan persyaratan halal yang berlaku.",
+                "Badan Penyelenggara Jaminan Produk Halal (BPJPH) memiliki program pendampingan proses produksi halal untuk membantu produsen dalam memenuhi persyaratan halal. Oleh karena itu, produsen dapat mengajukan permohonan untuk mendapatkan pendampingan dari BPJPH dalam proses produksi halal."
+            ]
+        },
+        {
+            "tag": "cari_pendampingan",
+            "patterns": [
+                "bagaimana saya bisa dapat pendamping pph?",
+                "cara dapat pendamping pph?",
+                "cara mencari pendamping pph?",
+                "pendamping pph daerah ini",
+                "apakah daerah ini ada pendamping?",
+                "pendamping pph terdekat dari sini",
+                "pendamping terdekat dari saya",
+                "cari pendamping pph",
+                "bagaimana caara mencari pendamping pph di daerah saya?",
+                "info pendamping pph daerah ini",
+                "apakah daerah saya ada pendamping?",
+                "apakah daerah ini punya pendamping?",
+                "info pendamping daerah ini",
+                "apakah daerah ini punya pendamping pph",
+                "sebaran pendamping pph",
+                "dimana saja ada pendamping pph",
+                "daerah yang punya pendamping pph",
+                "pendamping daerah ini",
+                "cari lembaga pendamping pph",
+                "apakah daerah ini ada lembaga pendamping phh",
+                "info lembaga pendamping pph",
+                "info lp3h di daerah ini",
+                "cek lp3h daerah ini",
+                "apakah daerah ini ada lp3h?",
+                "data p3h",
+                "cek data p3h",
+                "data lp3h",
+                "cek lp3h",
+                "jumlah lp3h",
+                "jumalah pendamping pph",
+                "jumlah p3h",
+                "p3h"
+            ],
+            "responses": [
+                "Untuk informasi pendamping dapat di cari pada link https://info.halal.go.id/pendampingan/",
+                "Informasi yang diminta terkait pendamping dapat di akses pada link https://info.halal.go.id/pendampingan/"
+            ]
+        },
+        {
+            "tag": "lembaga_pendamping_proses_produksi_halal",
+            "patterns": [
+                "apa itu lembaga pendamping proses produksi halal?",
+                "lembaga pendamping proses produksi halal",
+                "apa itu LP3H",
+                "lp3h",
+                "lembaga pendamping proses produksi halal adalah",
+                "lembaga p3h"
+            ],
+            "responses": [
+                "LP3H atau Lembaga Pendamping Proses Produk Halal adalah lembaga yang bertugas mendampingi dan mengawasi proses pengolahan produk halal. Tugas utama LP3H adalah memastikan bahwa semua tahapan produksi, mulai dari pengolahan bahan baku hingga distribusi, dilakukan sesuai dengan standar dan aturan kehalalan yang berlaku.",
+                "Lembaga pendamping proses produksi halal adalah badan atau organisasi yang memberikan panduan dan bimbingan kepada perusahaan dalam memastikan bahwa produk-produk yang dihasilkan memenuhi standar dan persyaratan kehalalan."
+            ]
+        },
+        {
+            "tag": "data_sertifikat_halal",
+            "patterns": [
+                "cari sebaran data sertifikat halal",
+                "sebaran data sertifikat halal",
+                "bagaimana cara mengetahui sebaran data sertifikat halal",
+                "data sertifikat halal",
+                "info sebaran data sertifikat halal",
+                "data sertifikasi halal",
+                "sebaran data sertifikasi halal",
+                "cari data sebaran sertifikasi halal",
+                "negara dengan distribusi halal terbesar",
+                "info negara penyumbang sertifikasih halal terbanyak",
+                "trend pendaftaran sertifikat halal regular",
+                "trend pendaftaran sertifikat halal self declare",
+                "info provinsi penyumbang sertifikat halal terbanyak",
+                "info data sertifikat halal per provinsi",
+                "sebaran data sertifikat halal berdasarkan produk",
+                "info sebaran data sertifikat halal berdasarkan jalur pendaftaran",
+                "info sebaran data sertifikat halal berdasarkan skala usaha dan tahun terbit",
+                "info distribusi status pendaftaran sertifikat halal"
+            ],
+            "responses": [
+                "Untuk informasi yang diminta terkait data sertifikat halal dapat di cari pada link http://olap.halal.go.id/public/dashboard/093da78f-f565-4b0d-852e-cad626a8f999",
+                "Informasi yang diminta terkait sebaran data sertifikat halal dapat di akses pada link http://olap.halal.go.id/public/dashboard/093da78f-f565-4b0d-852e-cad626a8f999"
+            ]
+        },
+        {
+            "tag": "data_kepegawaian",
+            "patterns": [
+                "berapa banyak pegawai di bpjph",
+                "pegawai bpjph ada berapa",
+                "info jumlah pegawai",
+                "data pegawai bpjph",
+                "sebaran data pegawai bpjph",
+                "status pegawa bpjph",
+                "pendidikan pegawai bpjph",
+                "cari data sebaran pegawai bpjph",
+                "info data pegawai bpjph",
+                "cek pegawai di bpjph",
+                "berapa karyawan di bpjph?",
+                "karyawan di bpjph"
+            ],
+            "responses": [
+                "Untuk informasi yang diminta terkait sebaran data pegawa dapat di cari pada link http://olap.halal.go.id/public/dashboard/ac856fc8-2150-4132-be4b-2fd103e4625e?status_pegawai=",
+                "Informasi yang diminta terkait sebaran data pegawai di BPJPH dapat di akses pada link http://olap.halal.go.id/public/dashboard/ac856fc8-2150-4132-be4b-2fd103e4625e?status_pegawai="
+            ]
+        },
+        {
+            "tag": "produk_wajib_halal",
+            "patterns": [
+                "apa saja yang termasuk produk wajib halal?",
+                "apa saja produk yang wajib memiliki sertifikat halal?",
+                "produk apa saja yang wajib punya sertifikat halal",
+                "produk yang wajib punya sertifikat halal",
+                "apakah produk ini wajib memiliki sertifikat halal?",
+                "produk saya wajib memiliki sertifikat halal?",
+                "sertifikat halal wajib?"
+            ],
+            "responses": [
+                "Produk yang wajib mendapatkan sertifikasi halal adalah makanan, minuman, obat-obatan, kosmetik, dan produk-produk lain yang mengandung bahan-bahan yang harus memenuhi persyaratan halal."
+            ]
+        },
+        {
+            "tag": "memastikan_kehalalan_di_pasar",
+            "patterns": [
+                "apa yang akan dilakukan bpjph untuk memastikan kehalalan produk yang beredar di pasaran",
+                "aksi bpjph untuk memastikan kehalalan produk yang beredar di pasaran",
+                "yang dilakukan bpjph untuk memastikan kehalalan produk yang beredar di indonesia",
+                "untuk memastikan kehalalan suatu produk di pasaran, apa yang dilakukan bpjph",
+                "cara bpjph memastikan kehalalan produk yang beredar di pasaran"
+            ],
+            "responses": [
+                "BPJPH bertanggung jawab untuk memastikan kehalalan produk halal dengan melakukan pengawasan dan penegakan hukum terhadap pelanggaran aturan sertifikasi halal. BPJPH juga memfasilitasi badan sertifikasi halal dalam melakukan audit pabrik dan pengecekan bahan baku untuk memastikan produk memenuhi persyaratan halal."
+            ]
+        },
+        {
+            "tag": "sanksi_sh_palsu",
+            "patterns": [
+                "Apa akibatnya jika suatu produk halal ternyata tidak halal?",
+                "apa yang terjadi jika produk halal ternyata tidak halal?",
+                "produk dengan nomor sertifikat halal palsu",
+                "apa akibatnya jika pelaku usaha memalsukan sertifikat halal?",
+                "pelaku usaha menaruh label halal pada produk tidak halal",
+                "sertifikat halal palsu"
+            ],
+            "responses": [
+                "Jika suatu produk yang telah diberi sertifikat halal ternyata tidak halal, maka badan sertifikasi halal akan mencabut sertifikat tersebut dan produsen atau pemilik merek akan dikenakan sanksi administratif dan pidana."
+            ]
+        },
+        {
+            "tag": "sertifikat_halal_luar_negeri",
+            "patterns": [
+                "Apakah sertifikasi halal dari negara lain dapat diakui di Indonesia?",
+                "apa sertifikat luar negeri dapat diakui di indonesia?",
+                "sertifikat luar negeri di akui di indonesia?",
+                "apakah sertifikat LN di akui di indonesia?",
+                "sertifikat LN diakui di indonesia?",
+                "apakah sertifikat luar negeri berlaku di indonesia?"
+            ],
+            "responses": [
+                "Sertifikasi halal dari negara lain dapat diakui di Indonesia jika telah melalui proses pengakuan oleh BPJPH dan telah memenuhi persyaratan yang ditetapkan."
+            ]
+        },
+        {
+            "tag": "pengertian_audit_halal",
+            "patterns": [
+                "Apa yang dimaksud dengan audit halal?",
+                "Pengertian audit halal",
+                "Definisi audit halal",
+                "Audit halal itu apa?",
+                "apa itu audit halal?",
+                "audit halal",
+                "maksud audit halal",
+                "jelaskan audit halal",
+                "audit halal adalah"
+            ],
+            "responses": [
+                "Audit halal adalah proses pemeriksaan yang dilakukan untuk memastikan bahwa produk atau layanan mematuhi standar kehalalan yang ditetapkan. Tujuan audit halal adalah untuk memverifikasi bahwa segala aspek produksi atau penyediaan layanan telah memenuhi persyaratan kehalalan, sehingga produk atau layanan tersebut dapat diberikan sertifikat halal.",
+                "Audit halal adalah pemeriksaan ketat yang dilakukan untuk memastikan bahwa semua tahap produksi atau penyediaan layanan telah sesuai dengan standar kehalalan yang berlaku. Hal ini termasuk pemeriksaan bahan baku, metode produksi, dan prosedur distribusi.",
+                "Pengertian audit halal adalah proses penilaian terhadap produk atau layanan untuk memastikan bahwa mereka sesuai dengan prinsip-prinsip kehalalan. Audit ini bertujuan untuk memastikan bahwa produk atau layanan tersebut memenuhi syarat untuk mendapatkan sertifikat halal."
+            ]
+        },
+        {
+            "tag": "prosedur_audit_halal",
+            "patterns": [
+                "Bagaimana proses audit halal berlangsung?",
+                "Prosedur audit halal",
+                "Langkah-langkah audit halal",
+                "Apa saja yang diperiksa dalam audit halal?",
+                "alur audit halal",
+                "rincian audit halal",
+                "proses audit halal",
+                "apa saja proses audit halal"
+            ],
+            "responses": [
+                "Proses audit halal melibatkan serangkaian langkah-langkah, termasuk pemeriksaan dokumen, pengujian, dan pemeriksaan langsung di lokasi produksi atau penyedia layanan. Auditor halal yang kompeten akan melakukan audit ini. Mereka akan menilai bahan-bahan yang digunakan, metode produksi, prosedur penyimpanan, dan distribusi produk atau layanan untuk memastikan kepatuhan terhadap standar kehalalan yang berlaku.",
+                "Audit halal adalah proses yang sangat terstruktur yang melibatkan pemeriksaan ketat terhadap seluruh rantai produksi atau penyediaan layanan. Auditor akan memeriksa dokumen, melakukan pengujian, dan memeriksa instalasi produksi secara langsung untuk memastikan kehalalan produk atau layanan tersebut.",
+                "Prosedur audit halal mencakup pemeriksaan dokumen, pengujian bahan, pemantauan proses produksi, dan pemeriksaan lapangan. Auditor akan memastikan bahwa setiap tahap produksi memenuhi persyaratan kehalalan yang telah ditetapkan."
+            ]
+        },
+        {
+            "tag": "pengertian_pemegang_sertifikat_halal",
+            "patterns": [
+                "Apa itu pemegang sertifikat halal?",
+                "Siapa yang disebut pemegang sertifikat halal?",
+                "Definisi pemegang sertifikat halal",
+                "pemegang sertifikat halal adalah",
+                "pemegang sertifikat halal itu apa",
+                "pengertian pemegang sertifikat halal",
+                "siapa pemegang sertifikat halal?"
+            ],
+            "responses": [
+                "Pemegang sertifikat halal adalah pihak atau organisasi yang telah memenuhi syarat dan diberikan sertifikat halal untuk produk atau layanan yang mereka produksi atau sediakan. Mereka diakui sebagai pemilik produk atau layanan yang telah lulus audit kehalalan.",
+                "Pemegang sertifikat halal adalah entitas yang telah melewati audit halal dan memenuhi persyaratan kehalalan untuk produk atau layanan tertentu. Mereka memiliki hak untuk menggunakan label halal pada produk atau layanan tersebut.",
+                "Dalam konteks kehalalan, pemegang sertifikat halal adalah individu atau organisasi yang telah menjalani audit kehalalan dan dinyatakan memenuhi standar kehalalan yang berlaku untuk produk atau layanan yang mereka tawarkan."
+            ]
+        },
+        {
+            "tag": "syarat_pemegang_sertifikat_halal",
+            "patterns": [
+                "Apa syarat menjadi pemegang sertifikat halal?",
+                "Syarat pemegang sertifikat halal",
+                "Persyaratan untuk mendapatkan sertifikat halal",
+                "syarat jadi pemegang sertifikat halal",
+                "pemegang sertifikat halal syaratnya apa?"
+            ],
+            "responses": [
+                "Untuk menjadi pemegang sertifikat halal, Anda perlu mematuhi persyaratan kehalalan yang ditetapkan oleh otoritas yang mengeluarkan sertifikat halal. Ini termasuk memastikan bahwa bahan baku, proses produksi, dan seluruh rantai pasokan memenuhi standar kehalalan yang berlaku.",
+                "Persyaratan untuk menjadi pemegang sertifikat halal dapat berbeda-beda berdasarkan otoritas dan negara tempat Anda beroperasi. Namun, umumnya Anda perlu mengajukan permohonan, menjalani audit halal, dan mematuhi prosedur yang ditetapkan untuk memastikan kepatuhan terhadap persyaratan kehalalan.",
+                "Syarat menjadi pemegang sertifikat halal melibatkan pemahaman yang mendalam tentang prinsip-prinsip kehalalan, pemenuhan persyaratan teknis, dan komitmen untuk menjaga kepatuhan terhadap standar kehalalan selama produksi atau penyediaan layanan."
+            ]
+        },
+        {
+            "tag": "cara_menjadi_pemegang_sertifikat_halal",
+            "patterns": [
+                "Bagaimana cara menjadi pemegang sertifikat halal?",
+                "Prosedur untuk mendapatkan sertifikat halal",
+                "Langkah-langkah menjadi pemegang sertifikat halal",
+                "cara jadi pemegang sertifikat halal",
+                "gimana caranya jadi pemegang sertifikat halal",
+                "saya mau jadi pemegang sertifikat halal",
+                "informasi jadi pemegang sertifikat halal"
+            ],
+            "responses": [
+                "Untuk menjadi pemegang sertifikat halal, Anda perlu mengikuti beberapa langkah, termasuk mengajukan permohonan kepada otoritas yang mengeluarkan sertifikat halal, menjalani audit halal, dan mematuhi prosedur yang ditetapkan untuk memastikan kepatuhan terhadap persyaratan kehalalan.",
+                "Langkah pertama adalah menghubungi otoritas yang berwenang dalam hal kehalalan di wilayah Anda dan mengajukan permohonan sertifikat halal. Setelah itu, Anda akan menjalani audit oleh auditor halal yang akan memeriksa semua aspek produksi atau penyediaan layanan.",
+                "Selama audit, pastikan Anda memiliki dokumentasi yang baik dan dapat menjelaskan bagaimana Anda memenuhi persyaratan kehalalan. Jika audit sukses, Anda akan diberikan sertifikat halal yang memungkinkan Anda untuk menggunakan label halal pada produk atau layanan Anda."
+            ]
+        },
+        {
+            "tag": "pengertian_aspek_teknis_halal",
+            "patterns": [
+                "Apa yang dimaksud dengan aspek teknis halal?",
+                "Pengertian aspek teknis halal",
+                "Apa yang dimaksud dengan teknis dalam kehalalan?",
+                "aspek teknis halal itu apa?",
+                "aspek teknis halal adalah",
+                "jelaskan aspek teknis halal",
+                "saya mau tau tentang aspek teknis halal"
+            ],
+            "responses": [
+                "Aspek teknis halal mengacu pada komponen teknis yang harus dipatuhi dalam memproduksi atau menyediakan produk atau layanan yang memenuhi persyaratan kehalalan. Ini mencakup pemilihan bahan baku, proses produksi, penyimpanan, penanganan, dan distribusi produk atau layanan.",
+                "Pengertian aspek teknis halal adalah semua aspek teknis yang berkaitan dengan kehalalan dalam produksi atau penyediaan produk atau layanan. Ini mencakup semua langkah yang harus diambil untuk memastikan bahwa produk atau layanan tersebut memenuhi persyaratan kehalalan yang berlaku.",
+                "Dalam aspek teknis halal, penting untuk memahami segala aspek teknis yang mempengaruhi kehalalan produk atau layanan. Ini mencakup pemahaman tentang bahan-bahan yang digunakan, proses produksi, penyimpanan, dan pengendalian kualitas."
+            ]
+        },
+        {
+            "tag": "hal_yang_termasuk_dalam_aspek_teknis_halal",
+            "patterns": [
+                "Apa yang termasuk dalam aspek teknis halal?",
+                "Komponen apa saja yang harus dipertimbangkan dalam aspek teknis halal?",
+                "Hal-hal apa saja yang mempengaruhi aspek teknis kehalalan?",
+                "apa saja aspek teknis halal?",
+                "yang termasuk aspek teknis halal adalah"
+            ],
+            "responses": [
+                "Dalam aspek teknis halal, Anda perlu mempertimbangkan pemilihan bahan baku yang sesuai dengan standar kehalalan, proses produksi yang menjaga kebersihan dan ketepatan, penyimpanan yang memenuhi syarat, penanganan produk yang benar, dan distribusi yang tidak mencemari produk dengan bahan haram.",
+                "Hal-hal yang termasuk dalam aspek teknis halal mencakup penerapan prinsip-prinsip kebersihan dalam produksi, pemantauan ketat terhadap bahan baku dan bahan tambahan, pemisahan produk halal dari produk non-halal, dan penanganan yang memastikan tidak terjadi pencemaran bahan haram.",
+                "Dalam aspek teknis halal, penting untuk memeriksa seluruh rantai pasokan untuk memastikan bahwa tidak ada bahan haram yang masuk dalam produk atau layanan, serta menjalani pengujian dan pemeriksaan yang diperlukan untuk memastikan kepatuhan terhadap standar kehalalan."
+            ]
+        },
+        {
+            "tag": "pengertian_pengawasan_halal",
+            "patterns": [
+                "Apa yang dimaksud dengan pengawasan kehalalan?",
+                "Definisi pengawasan halal",
+                "Pengertian pengawasan produk halal",
+                "pengawasan produk halal",
+                "pengawasan produk halal adalah",
+                "apa itu pengawasan produk halal?"
+            ],
+            "responses": [
+                "Pengawasan kehalalan adalah proses pengawasan dan pemantauan yang dilakukan untuk memastikan bahwa produk atau layanan yang diklaim sebagai halal mematuhi standar kehalalan yang berlaku. Proses ini melibatkan pemeriksaan dokumen, audit, pengujian, dan pemantauan produksi.",
+                "Pengertian pengawasan halal adalah langkah-langkah yang diambil untuk memverifikasi kepatuhan produk atau layanan terhadap persyaratan kehalalan. Ini mencakup pemeriksaan bahan baku, proses produksi, dan distribusi produk atau layanan yang dianggap halal.",
+                "Pengawasan produk halal adalah tindakan yang dilakukan untuk memastikan bahwa produk atau layanan yang dianggap halal benar-benar memenuhi persyaratan kehalalan yang telah ditetapkan."
+            ]
+        },
+        {
+            "tag": "bagaimana_berlangsungnya_pengawasan_halal",
+            "patterns": [
+                "Bagaimana pengawasan kehalalan berlangsung?",
+                "Proses pengawasan halal",
+                "Langkah-langkah pengawasan produk halal"
+            ],
+            "responses": [
+                "Pengawasan kehalalan melibatkan serangkaian langkah, termasuk pemeriksaan dokumen terkait produk atau layanan, audit produksi untuk memeriksa kepatuhan, pengujian laboratorium jika diperlukan, dan pemantauan berkelanjutan terhadap seluruh rantai pasokan.",
+                "Proses pengawasan halal dimulai dengan pengajuan permohonan sertifikat halal oleh produsen atau penyedia layanan. Setelah itu, auditor halal akan mengunjungi fasilitas produksi untuk melakukan audit dan memeriksa semua aspek produksi dan persyaratan kehalalan.",
+                "Langkah-langkah pengawasan produk halal meliputi audit, pengujian, pemantauan, dan pemberian sertifikat halal jika produk atau layanan memenuhi persyaratan kehalalan yang berlaku."
+            ]
+        },
+        {
+            "tag": "prosedur_pengawasan_halal",
+            "patterns": [
+                "Apa prosedur pengawasan halal?",
+                "Langkah-langkah pengawasan kehalalan",
+                "Tahapan pengawasan produk halal",
+                "prosedur pengawasan halal",
+                "alur pengawasan halal"
+            ],
+            "responses": [
+                "Prosedur pengawasan halal mencakup beberapa tahapan, yaitu pengajuan permohonan sertifikat halal, audit produksi, pengujian laboratorium jika diperlukan, pemantauan produksi, dan pemantauan berkelanjutan terhadap seluruh rantai pasokan.",
+                "Langkah-langkah pengawasan kehalalan melibatkan pemeriksaan dokumen, audit produksi, pengujian produk jika diperlukan, dan pemberian sertifikat halal jika produk atau layanan memenuhi standar kehalalan.",
+                "Tahapan pengawasan produk halal mencakup verifikasi dokumen, audit produksi yang melibatkan pemeriksaan detail produksi, pemantauan dan pengujian produk, serta pemantauan berkelanjutan untuk memastikan kepatuhan berkelanjutan terhadap persyaratan kehalalan."
+            ]
+        },
+        {   "tag": "manfaat_sertifikat_halal",
+            "patterns": [
+                "Apa saja manfaat memiliki sertifikasi halal?",
+                "Apa manfaat memiliki sertifikat halal?",
+                "Keuntungan memiliki sertifikat kehalalan",
+                "Apa saja manfaatnya jika produk memiliki sertifikat halal?",
+                "Bagaimana sertifikat halal dapat bermanfaat?",
+                "manfaat produk bersertifikat halal",
+                "kenapa produk harus bersertifikat halal?",
+                "manfaat bersertifikat halal",
+                "manfaat sertifikat halal"
+            ],
+            "responses": [
+                "Adapun manfaat memiliki sertifikasi halal pada produk memiliki beberapa manfaat, seperti: 1. Makin dipercaya konsumen; 2. Nilai jual tambahan; 3. Memperluas jangkauan pasar.",
+                "Sertifikat halal memberikan kepercayaan kepada konsumen bahwa produk atau layanan yang mereka beli telah memenuhi standar kehalalan. Ini dapat meningkatkan penjualan dan kepercayaan pelanggan.",
+                "Keuntungan memiliki sertifikat kehalalan meliputi akses lebih besar ke pasar halal, peningkatan citra merek, dan kemungkinan ekspansi bisnis ke pasar internasional.",
+                "Manfaat memiliki sertifikat halal termasuk peningkatan daya saing produk, peningkatan pangsa pasar, pemenuhan kebutuhan konsumen yang mengutamakan produk halal, dan pematuhan terhadap ketentuan hukum yang berlaku.",
+                "Sertifikat halal dapat bermanfaat dalam meningkatkan penerimaan produk di kalangan komunitas Muslim dan non-Muslim yang mencari produk yang diproduksi dengan standar kehalalan yang tinggi."
+            ]
+        },
+        {   "tag": "daftar_produk_dan_bahan_yang_digunakan_sertifikasi_halal_reguler",
+            "patterns": [
+                "Bagaimana cara mendapatkan daftar produk dan bahan yang digunakan pada sertifikasi halal reguler?",
+                "Apa saja produk yang dapat mendapatkan sertifikasi halal reguler?",
+                "Bahan apa saja yang digunakan dalam produk yang bisa disertifikasi halal secara reguler?",
+                "Produk apa yang biasanya mendapatkan sertifikat halal reguler?",
+                "Bahan-bahan yang harus memenuhi persyaratan sertifikasi halal reguler"
+            ],
+            "responses": [
+                "Daftar produk dan bahan yang digunakan pada halal reguler dapat diunduh di bpiph.halal.go.id/detail/informasi-1",
+                "Produk yang dapat mendapatkan sertifikasi halal reguler mencakup makanan, minuman, kosmetik, obat-obatan, bahan makanan, bahan tambahan makanan, serta produk-produk lain yang dikonsumsi atau digunakan oleh manusia.",
+                "Bahan-bahan yang digunakan dalam produk yang bisa disertifikasi halal secara reguler harus memenuhi standar kehalalan yang ditetapkan, termasuk bahan hewan, bahan nabati, bahan tambahan makanan, dan lainnya.",
+                "Produk-produk yang biasanya mendapatkan sertifikat halal reguler meliputi makanan olahan, minuman bersoda, permen, produk-produk susu, obat-obatan tertentu, produk perawatan kulit, dan masih banyak lagi.",
+                "Bahan-bahan yang digunakan dalam produk harus memenuhi persyaratan sertifikasi halal reguler, seperti bahan utama, pengawet, pewarna, dan bahan tambahan lainnya."
+            ]
+        },
+        {   "tag": "registrasi_auditor_halal",
+            "patterns": [
+                "Bagaimana cara registrasi auditor halal?",
+                "Prosedur pendaftaran auditor halal",
+                "Langkah-langkah menjadi auditor sertifikasi produk halal",
+                "Apa yang diperlukan untuk mendaftar sebagai auditor halal?",
+                "Persyaratan registrasi auditor kehalalan",
+                "cara daftar auditor halal"
+            ],
+            "responses": [
+                "Cara registrasi auditor halal dapat dilihat melalui link berikut https://cmsbl.halal.go.id/uploads/tutorial_Regis_Auditor_Halal_1_1bca80f98f.pdf",
+                "Untuk registrasi menjadi auditor halal, Anda perlu menghubungi Badan Penyelenggara Jaminan Produk Halal (BPJPH) atau lembaga yang ditunjuk untuk melaksanakan sertifikasi produk halal. Mereka akan memberikan informasi tentang persyaratan dan prosedur pendaftaran. Info lengkap kunjungi link berikut: https://cmsbl.halal.go.id/uploads/tutorial_Regis_Auditor_Halal_1_1bca80f98f.pdf",
+                "Prosedur pendaftaran auditor halal melibatkan pengajuan aplikasi, verifikasi kualifikasi dan pengalaman, serta pelatihan auditor halal yang mungkin diperlukan. Setelah lulus proses pendaftaran, Anda akan menjadi auditor yang diakui. Info lengkap kunjungi link berikut: https://cmsbl.halal.go.id/uploads/tutorial_Regis_Auditor_Halal_1_1bca80f98f.pdf",
+                "Langkah-langkah menjadi auditor sertifikasi produk halal meliputi pendaftaran, evaluasi kualifikasi, pelatihan auditor halal jika diperlukan, dan ujian sertifikasi. Setelah lulus ujian, Anda akan mendapatkan sertifikat auditor halal. Info lengkap kunjungi link berikut: https://cmsbl.halal.go.id/uploads/tutorial_Regis_Auditor_Halal_1_1bca80f98f.pdf",
+                "Untuk mendaftar sebagai auditor halal, biasanya Anda perlu memiliki latar belakang pendidikan dan pengalaman yang relevan, mengikuti pelatihan auditor halal, dan lulus ujian sertifikasi yang diakui oleh otoritas terkait. Info lengkap kunjungi link berikut: https://cmsbl.halal.go.id/uploads/tutorial_Regis_Auditor_Halal_1_1bca80f98f.pdf",
+                "Persyaratan registrasi auditor kehalalan meliputi kualifikasi pendidikan, pengalaman kerja, pengetahuan tentang standar kehalalan, dan kemampuan untuk melakukan audit produk halal."
+            ]
+        },
+        {
+            "tag": "pengertian_sehati_bpjph",
+            "patterns": [
+                "Apa itu SEHATI BPJPH?",
+                "Definisi SEHATI BPJPH",
+                "Pengertian SEHATI BPJPH",
+                "Apakah yang dimaksud dengan SEHATI BPJPH?",
+                "Penjelasan tentang SEHATI BPJPH",
+                "sehati adalah",
+                "program sehati itu apa?",
+                "program sehati"
+            ],
+            "responses": [
+                    "Definisi SEHATI atau sertifikat halal gratis BPJPH adalah program yang memungkinkan pemilik produk halal yang memenuhi kriteria tertentu untuk mendapatkan sertifikat halal tanpa biaya. Program ini bertujuan untuk mendorong lebih banyak produk halal di pasaran.",
+                    "Pengertian SEHATI atau sertifikat halal gratis BPJPH adalah upaya BPJPH untuk memfasilitasi pemilik produk dalam mendapatkan sertifikat halal tanpa harus mengeluarkan biaya tambahan. Ini bertujuan untuk mendukung industri produk halal di Indonesia."
+            ]
+        },
+        {
+            "tag": "persyaratan_SEHATI",
+            "patterns": [   
+                "Apa saja persyaratan mendaftar SEHATI?",
+                "Apa saja persyaratan mendaftar sertifikat halal gratis?",
+                "Apa saja persyaratan mendaftar sertifikat halal gratis (SEHATI)?",
+                "syarat ikut program sehati",
+                "cara ikut program sehati",
+                "persyaratam program sehati"
+            ],
+            "responses": [
+                "Adapun persyaratan mendaftar sertifikasi halal gratis (SEHATI) adalah sebagai berikut: - Produk tidak berisiko atau menggunakan bahan yang sudah dipastikan kehalalannya; - Proses produksi yang dipastikan kehalalannya dan sederhana; - Memiliki Nomor Induk Berusaha (NIB); - Memiliki hasil penjualan tahunan (omset) maksimal Rp. 500.000.000,00 (lima ratus juta rupiah) yang dibuktikan dengan pernyataan mandiri; - Memiliki lokasi, tempat, dan alat Proses Produk Halal (PPH) yang terpisah dengan lokasi, tempat dan alat proses produk tidak halal; - Memiliki atau tidak memiliki surat izin edar (PIRT/MD/UMOT/UKOT). Sertifikat Laik Higiene Sanitasi (SLHS) untuk produk makanan/minuman dengan daya simpan kurang dari 7 (tujuh) hari, atau izin industri lainnya atas produk yang dihasilkan dari dinas/instansi terkait; - Produk yang dihasilkan berupa barang; - Tidak menggunakan bahan berbahaya; - Bahan yang digunakan sudah dipastikan kehalalannya (Dibuktikan dengan sertifikat halal; atau Termasuk dalam daftar bahan sesuai Keputusan Menteri Agama Nomor 1360 Tahun 2021 tentang Bahan Yang dikecualikan dari Kewajiban Bersertifikat Halal; - Telah diverifikasi kehalalannya oleh pendamping proses produk halal; - Jenis produk/kelompok produk yang disertifikasi halal tidak mengandung unsur hewan hasil sembelihan, kecuali berasal dari produsen tau rumah potong hewan/rumah potong unggas yang sudah bersertifikat halal; - Menggunakan peralatan produksi dengan teknologi sederhana tau dilakukan secara manual dan/atau semi otomatis (usaha rumahan bukan usaha pabrik); - Proses pengawetan produk sederhana dan tidak menggunakan kombinasi lebih dari 1 metode pengawetan; - Bersedia melengkapi dokumen pengajuan sertifikasi halal dengan mekanisme pernyataan mandiri secara online melalui SIHALAL",
+                "Informasi lengkap terkait program sertifikat halal gratis (SEHATI) dapat diakses pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9",
+                "Syarat dan alur pengajuan sertifikasi halal gratis dapat dilihat pada link berikut https://drive.google.com/drive/folders/1i32l4UPfPpMjmGENMG3ilTRm5FW7JIZ9"
+            ]
+        },         
+        {
+            "tag": "pengertian_NIB_BPJPH",
+            "patterns": [
+                "Apa yang dimaksud dengan NIB BPJPH?",
+                "Definisi NIB BPJPH",
+                "Pengertian NIB BPJPH",
+                "Apa arti dari NIB BPJPH?",
+                "NIB adalah",
+                "nib itu apa?",
+                "nib"
+            ],
+            "responses": [
+                "NIB BPJPH adalah singkatan dari Nomor Induk Berusaha Badan Penyelenggara Jaminan Produk Halal (BPJPH). Ini merupakan nomor registrasi resmi yang diberikan oleh BPJPH kepada badan usaha yang terlibat dalam produksi atau distribusi produk halal di Indonesia.",
+                "Definisi NIB BPJPH adalah nomor registrasi yang diberikan oleh BPJPH kepada badan usaha yang memproduksi atau mendistribusikan produk halal. Ini merupakan bagian dari upaya pemerintah untuk mengatur dan memantau industri produk halal.",
+                "Pengertian NIB BPJPH adalah nomor identifikasi resmi yang harus dimiliki oleh badan usaha yang terlibat dalam industri produk halal di Indonesia. NIB ini digunakan untuk melacak, memantau, dan mengatur produk halal dari produsen hingga konsumen.",
+                "Apa arti dari NIB BPJPH? NIB BPJPH adalah nomor yang menunjukkan bahwa badan usaha tersebut terdaftar dan beroperasi dalam industri produk halal yang diatur oleh BPJPH."
+            ]
+        },
+        {
+            "tag": "fungsi_NIB_BPJPH",
+            "patterns": [
+                "Apa fungsi dari NIB BPJPH?",
+                "Peran NIB BPJPH",
+                "Manfaat NIB BPJPH",
+                "Apa kegunaan NIB BPJPH?"
+            ],
+            "responses": [
+                "Salah satu fungsi utama NIB BPJPH adalah untuk memberikan identifikasi resmi kepada badan usaha yang memproduksi atau mendistribusikan produk halal. Ini membantu dalam pelacakan produk halal dari sumbernya hingga konsumen akhir.",
+                "NIB BPJPH juga berperan dalam memudahkan pemantauan dan pengawasan produk halal oleh BPJPH. Ini termasuk dalam melakukan audit, inspeksi, dan penilaian terhadap badan usaha yang terlibat dalam industri produk halal.",
+                "Selain itu, NIB BPJPH juga memberikan manfaat bagi konsumen, karena mereka dapat memverifikasi kehalalan produk dengan melihat NIB pada label produk. Ini membantu konsumen dalam membuat keputusan yang sesuai dengan kepercayaan dan nilai-nilai mereka.",
+                "Kegunaan NIB BPJPH juga terkait dengan regulasi dan kepatuhan. Badan usaha yang memiliki NIB diharapkan mematuhi standar kehalalan yang ditetapkan oleh BPJPH dan berkontribusi pada keamanan dan kehalalan produk di pasar."
+            ]
+        },
+        {
+            "tag": "alur_registrasi_sertifikasi_halal_luar_negeri_SHLN",
+            "patterns": [ 
+                "Bagaimana alur registrasi sertikasi halal luar negeri?",
+                "Bagaimana alur registrasi sertikasi halal luar negeri (SHLN)?",
+                "Bagaimana alur registrasi SHLN?"
+            ],
+        "responses": [  
+            "Adapun alur registrasi sertifikasi halal luar negeri (SHLN) adalah sebagai berikut: 1. Importir/Perwakilan Resmi (PR) membuat akun di SIHalal, log in, klik menu SHLN, dan mengisi data pemohon dan dokumen persyaratan; 2. Setelah itu, BPJPH memverifikasi kelengkapan dan keabsadan dokumen permohonan dan importir/PR menyerahkan dokumen tambahan dan dokumen asli (@5 Hari kerja, lebih dari itu pengajuan dibatalkan secara sistem); 3. BPJPH menerbitkan invoice, lalu importir/PR melakukan pembayaran (7HK, lebih dari itu pengajuan dibatalkan secara sistem) dan verifikasi pembayaran dan menerbitkan STTP; 4. BPJPH menerbitkan Draf Blanko Nomor Registrasi SHLN, Persetujuan TTE, serta Nomor Registrasi SHLN terbit"
+        ]
+        },
+        {
+            "tag": "pengertian_sertifikat_halal_luar_negeri",
+            "patterns": [
+                "Apa yang dimaksud dengan sertifikat halal luar negeri?",
+                "Definisi sertifikat halal luar negeri",
+                "Pengertian sertifikat halal dari negara lain",
+                "Apa itu sertifikat halal internasional?",
+                "shln itu apa?",
+                "shln adalah"
+            ],
+            "responses": [
+                "Sertifikat halal luar negeri adalah dokumen resmi yang dikeluarkan oleh otoritas kehalalan dari suatu negara di luar Indonesia. Sertifikat ini menunjukkan bahwa produk tersebut memenuhi standar kehalalan yang berlaku di negara asalnya.",
+                "Definisi sertifikat halal luar negeri adalah tanda pengakuan resmi bahwa suatu produk atau layanan telah diuji dan dinyatakan halal oleh otoritas kehalalan di negara asalnya. Ini adalah bukti bahwa produk tersebut aman untuk konsumsi sesuai dengan prinsip kehalalan Islam.",
+                "Pengertian sertifikat halal dari negara lain adalah pengakuan bahwa produk tersebut telah memenuhi persyaratan kehalalan yang ditetapkan oleh otoritas kehalalan di negara asalnya. Sertifikat ini digunakan untuk memudahkan perdagangan internasional produk halal.",
+                "Sertifikat halal internasional adalah dokumen resmi yang mengkonfirmasi bahwa suatu produk atau layanan telah memenuhi standar kehalalan yang diakui secara internasional. Ini adalah bukti bahwa produk tersebut dapat diterima oleh pasar global."
+            ]
+        },
+        {
+            "tag": "cara_daftar_sertifikat_halal_luar_negeri",
+            "patterns": [
+                "Bagaimana cara mendaftar sertifikat halal dari luar negeri?",
+                "Prosedur pengajuan sertifikat halal luar negeri",
+                "Langkah-langkah mendapatkan sertifikat halal internasional"
+            ],
+            "responses": [
+                "Cara mendaftar sertifikat halal dari luar negeri melibatkan pengajuan permohonan kepada otoritas kehalalan di negara asal produk. Prosesnya dapat berbeda-beda tergantung pada regulasi yang berlaku di negara tersebut.",
+                "Prosedur pengajuan sertifikat halal luar negeri dapat mencakup pengumpulan dokumen yang diperlukan, pengujian produk, dan penilaian oleh otoritas kehalalan di negara asal produk. Setelah produk memenuhi persyaratan, sertifikat halal diberikan kepada produsen atau pemilik produk.",
+                "Langkah-langkah mendapatkan sertifikat halal internasional dapat beragam, tetapi biasanya melibatkan koordinasi dengan otoritas kehalalan di negara asal produk dan mematuhi prosedur yang ditetapkan oleh mereka."
+            ]
+        },
+        {
+            "tag": "alur_sertifikat_halal_luar_negeri",
+            "patterns": [
+                "Bagaimana alur sertifikat halal luar negeri?",
+                "Proses perolehan sertifikat halal internasional",
+                "Langkah-langkah mendapatkan sertifikat halal dari negara asal produk"
+            ],
+            "responses": [
+                "Alur sertifikat halal luar negeri melibatkan beberapa langkah, termasuk pengajuan permohonan, pengumpulan dokumen, pengujian produk, dan penilaian oleh otoritas kehalalan di negara asal produk. Setelah produk memenuhi persyaratan, sertifikat halal diberikan kepada produsen atau pemilik produk.",
+                "Proses perolehan sertifikat halal internasional dapat memakan waktu dan memerlukan kerjasama dengan otoritas kehalalan di negara asal produk. Penting untuk mengikuti alur yang ditetapkan oleh otoritas tersebut untuk mendapatkan sertifikat halal luar negeri.",
+                "Langkah-langkah mendapatkan sertifikat halal dari negara asal produk dapat bervariasi tergantung pada regulasi yang berlaku di negara tersebut. Namun, biasanya melibatkan pengumpulan dokumen, pengujian produk, dan koordinasi dengan otoritas kehalalan setempat."
+            ]
+        },
+        {
+            "tag": "verifikasi_registrasi_sertifikasi_halal_luar_negeri_SHLN",
+            "patterns": [   
+                "Bagaimana verifikasi sertikasi halal luar negeri?",
+                "Bagaimana verifikasi sertikasi halal luar negeri (SHLN)?",
+                "Bagaimana verifikasi SHLN?",
+                "Bagaimana cara melakukan verifikasi registrasi sertifikat halal luar negeri?",
+                "Prosedur verifikasi sertifikat halal internasional",
+                "Langkah-langkah verifikasi sertifikat halal dari negara asal produk"
+            ],
+            "responses": [  
+                "BPJPH akan memverifikasi kelengkapan dan keabsadan dokumen permohonan, lalu importir/PR menyerahkan dokumen tambahan dan dokumen asli (@5 Hari kerja, lebih dari itu pengajuan dibatalkan secara sistem)",
+                "Verifikasi registrasi sertifikat halal luar negeri melibatkan pengecekan keaslian dokumen sertifikat yang dikeluarkan oleh otoritas kehalalan di negara asal produk. Ini dapat dilakukan dengan menghubungi otoritas kehalalan terkait atau melalui mekanisme yang ditetapkan oleh BPJPH.",
+                "Prosedur verifikasi sertifikat halal internasional biasanya mencakup pengumpulan informasi tentang sertifikat tersebut, termasuk nomor sertifikat, tanggal berlaku, dan nama pemiliknya. Kemudian, informasi tersebut dapat dibandingkan dengan database BPJPH untuk memastikan keabsahan sertifikat.",
+                "Langkah-langkah verifikasi sertifikat halal dari negara asal produk melibatkan pembandingan data sertifikat dengan catatan yang ada di BPJPH. Ini adalah upaya untuk memastikan bahwa sertifikat tersebut sah dan dapat diakui di Indonesia."
+            ]
+        },
+        {
+            "tag": "pembayaran_registrasi_sertifikasi_halal_luar_negeri_SHLN",
+            "patterns": [   
+                "Bagaimana pembayaran sertikasi halal luar negeri?",
+                "Bagaimana pembayaran sertikasi halal luar negeri (SHLN)?",
+                "Bagaimana pembayaran SHLN?",
+                "Bagaimana cara membayar registrasi sertifikat halal luar negeri?",
+                "Proses pembayaran sertifikat halal internasional",
+                "Langkah-langkah pembayaran sertifikat halal dari negara asal produk"
+            ],
+            "responses": [  
+                "BPJPH menerbitkan invoice, importir/PR melakukan pembayaran (@7 Hari Kerja, lebih dari itu pengajuan dibatalkan secara sistem), lalu verifikasi pembayaran dan menerbitkan STTP",
+                "Pembayaran registrasi sertifikat halal luar negeri dapat dilakukan sesuai dengan petunjuk yang diberikan oleh otoritas kehalalan di Indonesia. Ini biasanya melibatkan transfer dana ke rekening yang ditentukan oleh BPJPH atau penggunaan metode pembayaran yang ditetapkan.",
+                "Proses pembayaran sertifikat halal internasional dapat berbeda-beda tergantung pada aturan yang ditetapkan oleh otoritas kehalalan di negara asal produk. Pemohon harus mengikuti petunjuk pembayaran yang diberikan oleh otoritas tersebut.",
+                "Langkah-langkah pembayaran sertifikat halal dari negara asal produk mencakup pengecekan jumlah biaya yang harus dibayarkan, metode pembayaran yang dapat digunakan, dan batas waktu pembayaran. Pembayaran harus dilakukan sesuai dengan instruksi yang diberikan."
+            ]
+        },
+        {
+            "tag": "penerbitan_sertifikat_halal_luar_negeri",
+            "patterns": [
+                "Bagaimana proses penerbitan sertifikat halal luar negeri?",
+                "Langkah-langkah penerbitan sertifikat halal internasional",
+                "Cara mendapatkan sertifikat halal dari negara asal produk"
+            ],
+            "responses": [
+                "Proses penerbitan sertifikat halal luar negeri melibatkan otoritas kehalalan di negara asal produk. Setelah verifikasi dan pembayaran selesai, otoritas tersebut akan menerbitkan sertifikat halal yang sah.",
+                "Langkah-langkah penerbitan sertifikat halal internasional termasuk dalam persyaratan yang ditetapkan oleh otoritas kehalalan di negara asal produk. Ini dapat mencakup penilaian produk, pengujian, dan pemeriksaan oleh otoritas tersebut.",
+                "Cara mendapatkan sertifikat halal dari negara asal produk harus mengikuti prosedur yang telah ditetapkan oleh otoritas kehalalan setempat. Setelah produk memenuhi persyaratan, sertifikat halal akan diterbitkan dan dapat digunakan dalam perdagangan internasional."
+            ]
+        }    
+    ]
+}

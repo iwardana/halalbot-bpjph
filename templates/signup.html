@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='signup.css') }}">
+</head>
+<body>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <div class="main-wrap">
+        <div class="outer-wrap">
+            <h1>Sign Up</h1>
+            <hr>
+            <div class="social-login">
+                <a href="#"><img src="static/images/fb.png" alt="Facebook"></a>
+                <a href="#"><img src="static/images/google.png" alt="Google"></a>
+                <a href="#"><img src="static/images/twitter.png" alt="Twitter"></a>
+            </div>
+            <p>Or sign up with email</p>
+            <form id="signup-form" action="" method="post" class="form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <p class="log-in-link">Have an account? <a href="{{ url_for('login') }}">Login</a></p>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            <div id="signup-error" class="error-message"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HALALBOT</title>
+</head>
+<body>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        
+        <title>HalalBot</title>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand mr-5 font-weight-bold" href="{{ url_for('base') }}">HalalBot</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link"href="{{ url_for('base') }}">Home </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for('layanan') }}">Layanan</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for('informasi') }}">Informasi</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for('regulasi') }}">Regulasi<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto" id="userMenu">
+                        <!-- Tampilkan nama pengguna di sini -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span id="userName">Halo, {{ session['username'] }}</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="{{ url_for('edit') }}">Edit</a>
+                                <a class="dropdown-item" href="{{ url_for('logout') }}">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+            </div> 
+        </nav>
+        <div class="jumbotron text-light text-center mb-5">
+            <h1 class="display-4 font-weight-bold">SELAMAT DATANG DI HALALBOT</h1>
+        </div>
+
+        <section class="regulasi mb-5" id ="regulasi">
+            <div class ="container">
+                <div class="row allign-items-center justify-content-between m-auto">
+                    <h3>REGULASI</h3>
+                    <p style="text-align: justify; color: black;"><b>Regulasi</b> adalah serangkaian peraturan dan ketentuan yang ditetapkan oleh otoritas atau badan pengatur untuk mengendalikan, mengawasi, dan mengatur suatu kegiatan atau industri tertentu. Dalam konteks sertifikasi halal di Indonesia, regulasi mengacu pada kerangka hukum yang mengatur proses sertifikasi produk halal dan lembaga-lembaga yang bertanggung jawab atas hal tersebut.</p>
+                    <p style="text-align: justify; color: black;"><b>Tujuan</b> dari regulasi dalam lingkup sertifikasi halal adalah memastikan bahwa produk yang dijual atau dikonsumsi oleh masyarakat memenuhi standar kehalalan yang ditetapkan. Regulasi ini dirancang untuk melindungi hak konsumen yang mengharapkan produk yang mereka beli sesuai dengan keyakinan dan kebutuhan halal mereka. Selain itu, regulasi juga bertujuan untuk mendorong produsen dan pelaku usaha untuk mematuhi prosedur sertifikasi halal yang benar.</p>
+                    <p style="text-align: justify; color: black;"><b>Manfaat</b> regulasi dalam sertifikasi halal mencakup aspek perlindungan konsumen, peningkatan kualitas produk, dan memajukan industri halal secara keseluruhan. Dengan adanya regulasi yang ketat, konsumen dapat memiliki kepercayaan lebih terhadap produk yang mereka beli, karena produk tersebut telah disertifikasi sesuai dengan standar kehalalan yang berlaku. Sementara itu, produsen diuntungkan karena produk halal mereka dapat lebih mudah diterima di pasar, termasuk pasar internasional, yang mungkin memiliki populasi Muslim yang signifikan. Ini juga menciptakan peluang untuk meningkatkan ekspor produk halal. Sehingga, regulasi adalah landasan penting dalam mengembangkan dan menjaga ekosistem sertifikasi halal yang berfungsi dengan baik di Indonesia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Undang-Undang RI -->
+        <section class="undang-undang mb-5" id="undang-undang">
+            <div class="container">
+                <div class="row allign-items-center justify-content-between m-auto">
+                    <h3>Undang-Undang Republik Indonesia</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row allign-items-center justify-content-between m-auto">
+                    <ul>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/2014_UU_Nomor_33_Tahun_2014_Jaminan_Produk_Halal_2209235c2a.pdf">
+                                <p style="text-align: justify;">Undang-Undang Nomor 33 Tahun 2014 tentang Jaminan Produk Halal</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/Salinan_UU_Nomor_6_Tahun_2023_b444d50313.pdf">
+                                <p style="text-align: justify;">Undang-Undang No. 6 Tahun 2023 - Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2022 Tentang Cipta Kerja</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Peraturan Pemerintah -->
+        <section class="perpem mb-5" id="perpem">
+            <div class="container">
+                <div class="row allign-items-center justify-content-between m-auto">
+                    <h3>Peraturan Pemerintah</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row allign-items-center justify-content-between m-auto">
+                    <ul>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/Peraturan_Pemerinta_No_39_Tahun_2021_tentang_Penyelenggaraan_Bidang_Jaminan_Produk_Halal_Pe_65db226200.pdf">
+                                <p style="text-align: justify;">Peraturan Pemerintah No. 39 Tahun 2021 tentang Penyelenggaraan Bidang Jaminan Produk Halal</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/Perpres_Nomor_6_Tahun_2023_5375703375.pdf">
+                                <p style="text-align: justify;">Perpres Nomor 6 Tahun 2023 tentang Sertifikasi Halal Obat, Produk Biologi, dan Alat Kesehatan</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!---Section Peraturan Menteri Agama-->
+        <section class="PMA mb-5" id="PMA">
+            <div class="container">
+              <div class="row allign-items-center justify-content-between m-auto">
+                <h3>Peraturan Menteri Agama</h3>
+              </div>
+            </div>
+            <div class="container">
+                <div class="row allign-items-center justify-content-between m-auto">
+                    <ul>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/PMA_2_Tahun_2022_Kerja_Sama_Internasional_fix_93c42d3a07.pdf">
+                            <p style="text-align: justify;">PMA 2 Tahun 2022 tentang Kerja Sama Internasional</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/PMA_8_Thn_2021_Pengawas_JPH_a34a86bc52.pdf">
+                            <p style="text-align: justify;">PMA 8 Tahun 2021 tentang Pengawas JPH</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/PMA_12_Tahun_2021_tentang_Tim_Akreditasi_LPH_0284af4e4f.pdf">
+                            <p style="text-align: justify;">PMA 12 Tahun 2021 tentang Tim Akreditasi LPH</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/PMA_Nomor_13_Tahun_2022_Pelatihan_dan_Sertifikasi_Kompetensi_Auditor_Penyelia_Halal_14c645a8b4.pdf">
+                            <p style="text-align: justify;">PMA Nomor 13 Tahun 2022 - Pelatihan dan Sertifikasi Kompetensi Auditor Penyelia Halal</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/PMA_20_Tahun_2021_tentang_Sertifikasi_Halal_UMK_a383224817.pdf">
+                            <p style="text-align: justify;">PMA 20 Tahun 2021 tentang Sertifikasi Halal UMK</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/PMA_Nomotr_72_Tahun_2022_Organisasi_dan_Tata_Kerja_Kementerian_Agama_289be3a67f.pdf">
+                            <p style="text-align: justify;">PMA 72 Tahun 2022 - Organisasi dan Tata Kerja Kementerian Agama</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>   
+        
+        <!---Section Keputusan Menteri Agama-->
+        <section class="KMA mb-5" id="KMA">
+            <div class="container">
+              <div class="row allign-items-center justify-content-between m-auto">
+                <h3>Keputusan Menteri Agama</h3>
+              </div>
+            </div>
+            <div class="container">
+                <div class="row allign-items-center justify-content-between m-auto">
+                    <ul>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/KMA_1360_Tahun_2021_tentang_Bahan_yang_Dikecualikan_dari_Kewajiban_Bersertifikat_Halal_a6401618a5.pdf">
+                            <p style="text-align: justify;">KMA 1360 Tahun 2021 tentang Bahan yang Dikecualikan dari Kewajiban Bersertifikat Halal</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/KMA_748_Tahun_2021_Produk_Yang_Wajib_Bersertifikat_Halal_7e59a27501.pdf">
+                            <p style="text-align: justify;">KMA 748 Tahun 2021 Produk Yang Wajib Bersertifikat Halal</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/KMA_297_2023_Tim_Pelaksana_Tugas_Komite_Fatwa_Produk_Halal_lgkp_19bac468d6.pdf">
+                            <p style="text-align: justify;">KMA 297 2023 Tim Pelaksana Tugas Komite Fatwa Produk Halal-lgkp</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/KMA_No_1103_Tahun_2019_Penetapan_Badan_Penyelenggara_Jaminan_Produk_Halal_Sebagai_Unit_Eselon_I_Pada_Kementerian_Agama_Yang_Menerapkan_Pola_Pengelolaan_Keuangan_Badan_Layanan_Umum_6adfcee5b1.pdf">
+                            <p style="text-align: justify;">KMA No. 1103 Tahun 2019 - Penetapan Badan Penyelenggara Jaminan Produk Halal Sebagai Unit Eselon I Pada Kementerian Agama Yang Menerapkan Pola Pengelolaan Keuangan Badan Layanan Umum</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/KMA_No_541_2022_Pejabat_Pengelola_BLU_BPJPH_04c22c2c66.pdf">
+                            <p style="text-align: justify;">KMA No. 541 2022 - Pejabat Pengelola BLU BPJPH</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Peraturan Badan -->
+        <section class="perbad mb-5" id="perbad">
+            <div class="container">
+                <div class="row allign-items-center justify-content-between m-auto">
+                    <h3>Peraturan Badan</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row allign-items-center justify-content-between m-auto">
+                    <ul>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/Peraturan_BPJPH_No_1_Tahun_2021_tentang_Tata_Cara_Tarif_bcebcd69e1.pdf">
+                                <p style="text-align: justify;">Peraturan BPJPH No. 1 Tahun 2021 tentang Tata Cara Tarif</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/Peraturan_BPJPH_No_1_Tahun_2022_tentang_Perubahan_Tata_Cara_Tarif_111eabe78c.pdf">
+                                <p style="text-align: justify;">Peraturan BPJPH No. 1 Tahun 2022 tentang Perubahan Tata Cara Tarif</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/1_2023_Per_BPJPH_Pedoman_Akreditasi_Lembaga_Pemeriksa_Halal_e8e159976e.pdf">
+                                <p style="text-align: justify;">Peraturan BPJPH No. 1 Tahun 2023 - Pedoman Akreditasi Lembaga Pemeriksa Halal</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!---Section Peraturan Kepala Badan-->
+        <section class="kepkaban mb-5" id="kepkaban">
+            <div class="container">
+              <div class="row allign-items-center justify-content-between m-auto">
+                <h3>Peraturan Kepala Badan</h3>
+              </div>
+            </div>
+            <div class="container">
+                <div class="row allign-items-center justify-content-between m-auto">
+                    <ul>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/Kepkaban_No_40_Tahun_2022_ttg_Penetapan_Label_830fcb2bf0.pdf">
+                            <p style="text-align: justify;">Keputusan Kepala Badan No. 40 Tahun 2022 tentang Penetapan Label Halal</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/Kepkaban_No_88_Tahun_2022_tentang_Penggunaan_Label_Halal_6d31ceaf47.pdf">
+                            <p style="text-align: justify;">Keputusan Kepala Badan No. 88 Tahun 2022 tentang Penggunaan Label Halal</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/Keputusan_Kepala_Badan_No_83_Tahun_2022_tentang_Perubahan_Kepkaban_No_141_ttg_Penetapan_Tarif_Layanan_BLU_BPJPH_df8f1dd32b.pdf">
+                            <p style="text-align: justify;">Keputusan Kepala Badan No.83 Tahun 2022 tentang Perubahan Kepkaban No 141 ttg Penetapan Tarif Layanan BLU BPJPH</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/Keputusan_Kepala_Badan_No_61_tentang_SOP_Permohonan_Sertifikat_Halal_BPJPH_75073875bf.pdf">
+                            <p style="text-align: justify;">Keputusan Kepala Badan No. 61 tentang SOP Permohonan Sertifikat Halal BPJPH</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/Kepkaban_No_22_Tahun_2023_Perubahan_150_Juknis_Pendamping_PPH_Self_Declare_f8e6d3990b.pdf">
+                            <p style="text-align: justify;">Keputusan Kepala Badan No. 22 Tahun 2023 tentang Perubahan 150 Juknis Pendamping PPH Self Declare</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/58_Kepkaban_58_Th_2022_ttg_Penetapan_Instrumen_Verval_Pendamping_PPH_1_40d9cc9562.pdf">
+                            <p style="text-align: justify;">Keputusan Kepala Badan No. 58 Tahun 2022 - Penetapan Instrumen Verval Pendamping PPH</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/Kepkaban_No_20_Tahun_2023_Perubahan_SJPH_3_bca72daa00.pdf">
+                            <p style="text-align: justify;">Kepkaban No. 20 Tahun 2023 tentang Perubahan SJPH</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/78_2023_SK_Pedoman_Sertifikasi_Halal_Makanan_dan_Minuman_dengan_Pengelolahan_3aa915efdf.pdf">
+                            <p style="text-align: justify;">Kepkaban Nomor 78 Tahun 2023 tentang Pedoman Sertifikasi Halal Makanan dan Minuman dengan Pengelolahan</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/77_2023_SK_Pedoman_Penyelenggaraan_Sistem_Jaminan_Produk_Halal_dalam_Pemotongan_Hewan_Reuminansia_dan_Unggas_b28c409d0e.pdf">
+                            <p style="text-align: justify;">Kepkaban No. 77 Tahun 2023 tentang Pedoman Penyelenggaraan Sistem Jaminan Produk Halal dalam Pemotongan Hewan Reuminansia dan Unggas</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/Kepkaban_Nomor_81_Tahun_2023_Tentang_Tata_Cara_Pembayaran_Layanan_Sertifikasi_Halal_6131aa0512.pdf">
+                            <p style="text-align: justify;">Kepkaban Nomor 81 Tahun 2023 Tentang Tata Cara Pembayaran Layanan Sertifikasi Halal</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>   
+
+        <!-- Section Peraturan dan Keputusan Menteri Keuangan -->
+        <section class="perbad mb-5" id="perbad">
+            <div class="container">
+                <div class="row allign-items-center justify-content-between m-auto">
+                    <h3>Peraturan dan Keputusan Menteri Keuangan</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row allign-items-center justify-content-between m-auto">
+                    <ul>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/57_PMK_05_2021_Per_b450f8e2ce.pdf">
+                                <p style="text-align: justify;">PMK NOMOR 57 /PMK.05/2021 - Tarif Layanan Badan Layanan Umum Badan Penyelenggara Jaminan Produk Halal Pada Kementerian Agama</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cmsbl.halal.go.id/uploads/2019_Penetapan_BPJPH_Sebagai_Satker_BLU_8a183d7b7d.pdf">
+                                <p style="text-align: justify;">KMK 3/KM.05/2019 - Penetapan BPJPH Sebagai Satker BLU</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="socmed mt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-1 ml-1 mr-1">
+                        <a href="https://facebook.com/halal.indonesia" style="text-decoration: none;">
+                            <i class="icon facebook fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="col-1 ml-1 mr-1">
+                        <a href="https://instagram.com/halal.indonesia" style="text-decoration: none;">
+                            <i class="icon instagram fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="col-1 ml-1 mr-1">
+                        <a href="https://twitter.com/@bpjphkemenag" style="text-decoration: none;">
+                            <i class="icon twitter fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col-1 ml-1 mr-1">
+                        <a href="https://youtube.com/@halal.indonesia" style="text-decoration: none;">
+                            <i class="icon youtube fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+         <section class="contact" id="contact">
+            <div class="container">
+               <div class="row">
+                  <div class="row col-md-4 offset-md-2 align-items-center align-content-center mb-4">
+                     <h4 class="col-md-12 font-weight-bold">HalalBot</h4>
+                     <h6 class="col-md-12">Teman Anda dalam Pilihan Halal.</h6>
+                  </div>
+                  <div class="row col-md-6 justify-content-center">
+                     <h5 class="col-12 mb-2 font-weight-bold">Contact Us</h5>
+                     <h6 class="col-md-12">Telp: +62 8123456789</h6>
+                     <h6 class="col-md-12">Email: cs.halalbot@bpjph.com</h6>
+                  </div>
+               </div>
+         </section>
+         <section class="footer p-2">
+            <div class="container">
+               <div class="row">
+                  <h6 class="col-md-12 text-center mb-0">&copy; Copyright 2023</h6>
+                  <p class="col-md-12 text-center text-decoration-none mb-0">Develop By <a
+                        href="http://instagram.com/ilhamwardanaaa" target="_blank">Ilham Wardana - Sistem Informasi UPNVJ</a></p>
+               </div>
+            </div>
+         </section>
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+    </body>
+    <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">HalalBot</h4>
+                        <p class="chatbox__description--header">Hi. Aku HalalBot, ada yang bisa aku bantu?</p>
+                    </div>
+                </div>
+                <div class="chatbox__questions">
+                    <div class="question-option" onclick="chatbox.addQuestion('apa itu sertifikat halal')">Apa itu sertifikat halal?</div>
+                    <div class="question-option" onclick="chatbox.addQuestion('alur pembuatan sertifikat halal')">Alur pembuatan sertifikat halal</div>
+                    <div class="question-option" onclick="chatbox.addQuestion('tarif layanan sertifikat halal')">Tarif layanan sertifikat halal</div>
+                    <div class="question-option" onclick="chatbox.addQuestion('self declare')">Self declare</div>
+                    <div class="question-option" onclick="chatbox.addQuestion('sehati adalah')">Sehati adalah</div>
+                </div> 
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Tulis pesan...">
+                    <button class="chatbox__send--footer send__button">Send</button>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="static/images/chabot-icon.png" /></button>
+            </div>
+        </div>
+    </div>
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

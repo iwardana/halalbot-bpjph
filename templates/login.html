@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login Form | HalalBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <div class="main-wrap">
+        <div class="outer-wrap">
+            <h1>Log in</h1>
+            <hr>
+            <div class="social-login">
+                <a href="#">
+                    <img src="static/images/fb.png" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="static/images/google.png" alt="Google">
+                </a>
+                <a href="#">
+                    <img src="static/images/twitter.png" alt="Twitter">
+                </a>
+            </div>
+            <p>or use your email</p>
+
+            <form id="login-form" method="POST" action="{{ url_for('login') }}" class="form">
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <br>
+                <label for="password">Password</label>
+                <br>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <br>
+                <input type="checkbox" name="check" id="check">
+                <span class="rm-me">Remember Me</span>
+                <a href="#" class="fg-pa">Forgot Password?</a>
+                <br>
+                <button type="submit" class="btn">Log in</button>
+            </form>
+            <div id="login-error" class="error-message"></div>
+            <div class="terms">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+            <p class="sign-up-link">Don't have an account? <a href="{{ url_for('signup') }}">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>
